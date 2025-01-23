@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\masaustu_yedek\\cv_blog\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|d:\\masaustu_yedek\\cv_blog\\webapplication1\\admindeneyimler.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|solutionrelative:webapplication1\\admindeneyimler.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|d:\\masaustu_yedek\\cv_blog\\webapplication1\\admindeneyimler.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|solutionrelative:webapplication1\\admindeneyimler.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|d:\\masaustu_yedek\\cv_blog\\webapplication1\\dataset1.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|solutionrelative:webapplication1\\dataset1.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminDeneyimler.aspx.cs",
+              "DocumentMoniker": "D:\\masaustu_yedek\\cv_blog\\WebApplication1\\AdminDeneyimler.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\AdminDeneyimler.aspx.cs",
+              "ToolTip": "D:\\masaustu_yedek\\cv_blog\\WebApplication1\\AdminDeneyimler.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\AdminDeneyimler.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T22:44:30.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminDeneyimler.aspx",
+              "DocumentMoniker": "D:\\masaustu_yedek\\cv_blog\\WebApplication1\\AdminDeneyimler.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\AdminDeneyimler.aspx",
+              "ToolTip": "D:\\masaustu_yedek\\cv_blog\\WebApplication1\\AdminDeneyimler.aspx",
+              "RelativeToolTip": "WebApplication1\\AdminDeneyimler.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-23T22:39:22.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataSet1.xsd",
+              "DocumentMoniker": "D:\\masaustu_yedek\\cv_blog\\WebApplication1\\DataSet1.xsd",
+              "RelativeDocumentMoniker": "WebApplication1\\DataSet1.xsd",
+              "ToolTip": "D:\\masaustu_yedek\\cv_blog\\WebApplication1\\DataSet1.xsd",
+              "RelativeToolTip": "WebApplication1\\DataSet1.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-01-23T21:49:00.578Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

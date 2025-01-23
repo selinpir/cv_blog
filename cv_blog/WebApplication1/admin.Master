@@ -1,0 +1,82 @@
+﻿
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>CV Blog Admin Panel</title>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <link href="\admindosyalar\bootstrap-3.3.7\dist\css\bootstrap.min.css" rel="stylesheet" />
+        <link href="\admindosyalar\StyleSheet2.css" rel="stylesheet" />
+             
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+             
+                <div class="sidebar-header">
+                    <h3>CV Blog</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+               
+                   
+                             <li> <a href="hakkimda.aspx"> <i class="glyphicon glyphicon-home"></i> About</a> </li>
+                    
+                             <li> <a href="AdminDeneyimler.aspx"> <i class="glyphicon glyphicon-briefcase"></i>Experience</a> </li>
+                 
+                             <li> <a href="#"> <i class="glyphicon glyphicon-education"></i>Education</a> </li>
+                    
+                             <li> <a href="#"> <i class="glyphicon glyphicon-console"></i>Skills</a> </li>
+                   
+                             <li> <a href="#"> <i class="glyphicon glyphicon-play"></i>Interests</a> </li>
+              
+                             <li> <a href="#"> <i class="glyphicon glyphicon-book"></i>Certifications</a> </li>
+                   
+
+
+                
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+               
+
+        </div>
+
+
+
+        <div class="overlay"></div>
+
+
+        <!-- jQuery CDN -->
+        <script src="file:///d:\masaustu_yedek\webapplication1\webapplication1\admindosyalar\jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="file:///d:\masaustu_yedek\webapplication1\webapplication1\admindosyalar\js-bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+    </body>
+</html>
