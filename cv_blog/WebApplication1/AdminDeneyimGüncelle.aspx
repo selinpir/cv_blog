@@ -33,12 +33,8 @@
              <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control"></asp:TextBox>
          </div>
              <br/>      
-          <asp:Button ID="Button1" runat="server" CssClass="btn btn-info" Text="Güncelle"  />
-     <%--<asp:Button ID="Button1" runat="server" CssClass="btn btn-info" Text="Güncelle" OnClick="Button1_Click" />--%>
-
-      </div>
-
-
-  </form>
+          <asp:Button ID="Button1" runat="server" CssClass="btn btn-info" Text="Güncelle"/>   <%-- çalışmıyor--%>
+            </div>
+            </form>
     </asp:Content>
 

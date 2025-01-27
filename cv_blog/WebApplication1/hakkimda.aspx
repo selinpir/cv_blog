@@ -46,7 +46,7 @@
               </div>
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" CssClass="btn btn-success" Text="Güncelle" />
+            <asp:Button ID="Button1" runat="server" CssClass="btn btn-success" Text="Güncelle" />  <%--çalışmıyor :(--%>
         </div>
     </form>
 

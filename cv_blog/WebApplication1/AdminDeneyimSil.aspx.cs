@@ -16,7 +16,7 @@ namespace WebApplication1
                 DataSet1TableAdapters.Deneyim_tblTableAdapter();
 
             dt.Deneyim_Sil(Convert.ToInt16(id));
-            Response.Redirect("AdminDeneyimler.Aspx");
+            Response.Redirect("AdminDeneyimler.aspx");
 
         }
     }

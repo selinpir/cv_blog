@@ -337,6 +337,10 @@
     <Content Include="adminDosyalar\sidebar\style4.css" />
     <Content Include="adminDosyalar\sidebar\style5.css" />
     <Content Include="adminDosyalar\StyleSheet2.css" />
+    <Content Include="AdminEgitimEkle.aspx" />
+    <Content Include="AdminEgitimGüncelle.aspx" />
+    <Content Include="AdminEgitimler.aspx" />
+    <Content Include="AdminEgitimSil.aspx" />
     <Content Include="dosyalar\.gitignore" />
     <Content Include="dosyalar\css\resume.css" />
     <Content Include="dosyalar\css\resume.min.css" />
@@ -1771,6 +1775,34 @@
     </Compile>
     <Compile Include="AdminDeneyimSil.aspx.designer.cs">
       <DependentUpon>AdminDeneyimSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEgitimEkle.aspx.cs">
+      <DependentUpon>AdminEgitimEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEgitimEkle.aspx.designer.cs">
+      <DependentUpon>AdminEgitimEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEgitimGüncelle.aspx.cs">
+      <DependentUpon>AdminEgitimGüncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEgitimGüncelle.aspx.designer.cs">
+      <DependentUpon>AdminEgitimGüncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEgitimler.aspx.cs">
+      <DependentUpon>AdminEgitimler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEgitimler.aspx.designer.cs">
+      <DependentUpon>AdminEgitimler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEgitimSil.aspx.cs">
+      <DependentUpon>AdminEgitimSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEgitimSil.aspx.designer.cs">
+      <DependentUpon>AdminEgitimSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>

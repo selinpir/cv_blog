@@ -28,7 +28,8 @@
                         <td><%# Eval("TARIH") %> </td>
                     <td>
                   <asp:HyperLink NavigateUrl='<%# "AdminDeneyimSil.aspx?ID=" + Eval("ID")  %>' ID="HyperLink1" runat="server" cssClass="btn btn-danger" >Sil</asp:HyperLink>
-                  <asp:HyperLink NavigateUrl='<%# "AdminDeneyimGüncelle.aspx" + Eval("ID")  %>'  ID="HyperLink2" runat="server" cssClass="btn btn-warning" >Güncelle</asp:HyperLink>
+              <%--<asp:HyperLink NavigateUrl='<%# "AdminDeneyimGüncelle.aspx" + Eval("ID")  %>'  ID="HyperLink2" runat="server" cssClass="btn btn-warning" >Güncelle</asp:HyperLink>--%>
+                  <asp:HyperLink NavigateUrl='<%# "AdminDeneyimGüncelle.aspx?ID=" + Eval("ID") %>'     ID="HyperLink4"     runat="server"     CssClass="btn btn-warning">Güncelle</asp:HyperLink>
                     </td>
                 </tr>
                 </ItemTemplate>

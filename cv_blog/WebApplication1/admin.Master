@@ -29,7 +29,7 @@
                     
                              <li> <a href="AdminDeneyimler.aspx"> <i class="glyphicon glyphicon-briefcase"></i>Experience</a> </li>
                  
-                             <li> <a href="#"> <i class="glyphicon glyphicon-education"></i>Education</a> </li>
+                             <li> <a href="AdminEgitimler.aspx"> <i class="glyphicon glyphicon-education"></i>Education</a> </li>
                     
                              <li> <a href="#"> <i class="glyphicon glyphicon-console"></i>Skills</a> </li>
                    

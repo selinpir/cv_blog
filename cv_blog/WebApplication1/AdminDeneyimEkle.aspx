@@ -27,7 +27,7 @@
              <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control"></asp:TextBox>
          </div>
              <br/>      
-          <asp:Button ID="Button1" runat="server" CssClass="btn btn-success" Text="Güncelle" OnClick="Button1_Click" />
+          <asp:Button ID="Button1" runat="server" CssClass="btn btn-success" Text="Güncelle" OnClick="Button1_Click" /> <%--çalışıyor--%>
       </div>
   </form>
 
