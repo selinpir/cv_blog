@@ -27,7 +27,7 @@
                         <td><%# Eval("ACIKLAMA") %> </td>
                         <td><%# Eval("TARIH") %> </td>
                     <td>
-                  <asp:HyperLink NavigateUrl='<%# "AdminDeneyimSil.aspx?ID={0}" + Eval("ID")  %>' ID="HyperLink1" runat="server" cssClass="btn btn-danger" >Sil</asp:HyperLink>
+                  <asp:HyperLink NavigateUrl='<%# "AdminDeneyimSil.aspx?ID=" + Eval("ID")  %>' ID="HyperLink1" runat="server" cssClass="btn btn-danger" >Sil</asp:HyperLink>
                   <asp:HyperLink NavigateUrl='<%# "AdminDeneyimGüncelle.aspx" + Eval("ID")  %>'  ID="HyperLink2" runat="server" cssClass="btn btn-warning" >Güncelle</asp:HyperLink>
                     </td>
                 </tr>

@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#"   MasterPageFile="~/admin.Master" AutoEventWireup="true" CodeBehind="AdminDeneyimGüncelle.aspx.cs" Inherits="WebApplication1.AdminDeneyimGüncelle" %>
 
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">  
 </asp:Content>
 
@@ -33,6 +34,11 @@
          </div>
              <br/>      
           <asp:Button ID="Button1" runat="server" CssClass="btn btn-info" Text="Güncelle"  />
+     <%--<asp:Button ID="Button1" runat="server" CssClass="btn btn-info" Text="Güncelle" OnClick="Button1_Click" />--%>
+
       </div>
+
+
   </form>
     </asp:Content>
+

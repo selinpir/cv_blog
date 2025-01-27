@@ -7,11 +7,15 @@
       "RelativeMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|solutionrelative:webapplication1\\admindeneyimg\u00FCncelle.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|d:\\masaustu_yedek\\github\\cv_blog\\cv_blog\\webapplication1\\admindeneyimg\u00FCncelle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|D:\\masaustu_yedek\\GITHUB\\cv_blog\\cv_blog\\webapplication1\\admindeneyimler.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|solutionrelative:webapplication1\\admindeneyimler.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|D:\\masaustu_yedek\\GITHUB\\cv_blog\\cv_blog\\webapplication1\\admindeneyimg\u00FCncelle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|solutionrelative:webapplication1\\admindeneyimg\u00FCncelle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|d:\\masaustu_yedek\\github\\cv_blog\\cv_blog\\webapplication1\\dataset1.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "AbsoluteMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|D:\\masaustu_yedek\\GITHUB\\cv_blog\\cv_blog\\webapplication1\\dataset1.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
       "RelativeMoniker": "D:0:0:{32EC4A1D-8806-4FA9-80BC-A3D0483592F6}|WebApplication1\\cv_blog.csproj|solutionrelative:webapplication1\\dataset1.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
     }
   ],
@@ -30,16 +34,28 @@
               "Title": "AdminDeneyimG\u00FCncelle.aspx.cs",
               "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\cv_blog\\cv_blog\\WebApplication1\\AdminDeneyimG\u00FCncelle.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication1\\AdminDeneyimG\u00FCncelle.aspx.cs",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\cv_blog\\cv_blog\\WebApplication1\\AdminDeneyimG\u00FCncelle.aspx.cs*",
-              "RelativeToolTip": "WebApplication1\\AdminDeneyimG\u00FCncelle.aspx.cs*",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA0wBIAAAAcAAAAAAAAAA==",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\cv_blog\\cv_blog\\WebApplication1\\AdminDeneyimG\u00FCncelle.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\AdminDeneyimG\u00FCncelle.aspx.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwA4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T19:23:30.331Z",
+              "WhenOpened": "2025-01-27T19:52:00.09Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AdminDeneyimler.aspx",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\cv_blog\\cv_blog\\WebApplication1\\AdminDeneyimler.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\AdminDeneyimler.aspx",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\cv_blog\\cv_blog\\WebApplication1\\AdminDeneyimler.aspx",
+              "RelativeToolTip": "WebApplication1\\AdminDeneyimler.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-27T19:51:57.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AdminDeneyimG\u00FCncelle.aspx",
               "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\cv_blog\\cv_blog\\WebApplication1\\AdminDeneyimG\u00FCncelle.aspx",
               "RelativeDocumentMoniker": "WebApplication1\\AdminDeneyimG\u00FCncelle.aspx",
@@ -47,20 +63,18 @@
               "RelativeToolTip": "WebApplication1\\AdminDeneyimG\u00FCncelle.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-01-27T19:23:16.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T19:48:43.188Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DataSet1.xsd",
               "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\cv_blog\\cv_blog\\WebApplication1\\DataSet1.xsd",
               "RelativeDocumentMoniker": "WebApplication1\\DataSet1.xsd",
               "ToolTip": "D:\\masaustu_yedek\\GITHUB\\cv_blog\\cv_blog\\WebApplication1\\DataSet1.xsd",
               "RelativeToolTip": "WebApplication1\\DataSet1.xsd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2025-01-27T17:18:01.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T17:18:01.843Z"
             }
           ]
         }
