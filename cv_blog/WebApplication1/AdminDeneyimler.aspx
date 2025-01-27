@@ -3,6 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
+
+    <form id="Form1" runat="server">
     <table class="table table-bordered">
        
         <tr>
@@ -11,6 +13,7 @@
             <td>ALT BAŞLIK</td>
             <th>AÇIKLAMA</th>
             <th>TARİH</th>
+            <th>İŞLEMLER</th>
 
         </tr>
 
@@ -23,11 +26,16 @@
                         <td><%# Eval("ALTBASLIK") %> </td>
                         <td><%# Eval("ACIKLAMA") %> </td>
                         <td><%# Eval("TARIH") %> </td>
+                    <td>
+                  <asp:HyperLink NavigateUrl='<%# "AdminDeneyimSil.aspx?ID={0}" + Eval("ID")  %>' ID="HyperLink1" runat="server" cssClass="btn btn-danger" >Sil</asp:HyperLink>
+                  <asp:HyperLink NavigateUrl='<%# "AdminDeneyimGüncelle.aspx" + Eval("ID")  %>'  ID="HyperLink2" runat="server" cssClass="btn btn-warning" >Güncelle</asp:HyperLink>
+                    </td>
                 </tr>
                 </ItemTemplate>
             </asp:Repeater>
         </tbody>
        
     </table>
-
+    <asp:HyperLink NavigateUrl="~/AdminDeneyimEkle.aspx" ID="HyperLink3" runat="server" CssClass="btn btn-info">Deneyim Ekle</asp:HyperLink>
+  </form>
 </asp:Content>
