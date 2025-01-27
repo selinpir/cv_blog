@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/admin.Master" AutoEventWireup="true" CodeBehind="hakkimda.aspx.cs" Inherits="page.hakkımda" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin.Master" AutoEventWireup="true" 
+    CodeBehind="hakkimda.aspx.cs" Inherits="page.hakkimda" %>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   

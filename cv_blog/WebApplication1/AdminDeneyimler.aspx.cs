@@ -11,8 +11,8 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet1TableAdapters.deneyimTableAdapter dt = new DataSet1TableAdapters.deneyimTableAdapter();
-            Repeater1.DataSource = dt.deneyimlistele();
+            DataSet1TableAdapters.Deneyim_tblTableAdapter dt = new DataSet1TableAdapters.Deneyim_tblTableAdapter();
+            Repeater1.DataSource = dt.DeneyimListele();
             Repeater1.DataBind();
         }
     }

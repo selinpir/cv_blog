@@ -11,6 +11,7 @@
             <td>ALT BAŞLIK</td>
             <th>AÇIKLAMA</th>
             <th>TARİH</th>
+
         </tr>
 
         <tbody>

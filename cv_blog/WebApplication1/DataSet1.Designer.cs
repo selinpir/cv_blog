@@ -24,15 +24,15 @@ namespace WebApplication1 {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class DataSet1 : global::System.Data.DataSet {
         
-        private hakkımdaDataTable tablehakkımda;
+        private Hakkimda_tblDataTable tableHakkimda_tbl;
         
-        private deneyimDataTable tabledeneyim;
+        private Deneyim_tblDataTable tableDeneyim_tbl;
         
-        private egitimDataTable tableegitim;
+        private Egitim_tblDataTable tableEgitim_tbl;
         
-        private hobilerDataTable tablehobiler;
+        private Hobiler_tblDataTable tableHobiler_tbl;
         
-        private sertifikaDataTable tablesertifika;
+        private Sertifika_tblDataTable tableSertifika_tbl;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -62,20 +62,20 @@ namespace WebApplication1 {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["hakkımda"] != null)) {
-                    base.Tables.Add(new hakkımdaDataTable(ds.Tables["hakkımda"]));
+                if ((ds.Tables["Hakkimda_tbl"] != null)) {
+                    base.Tables.Add(new Hakkimda_tblDataTable(ds.Tables["Hakkimda_tbl"]));
                 }
-                if ((ds.Tables["deneyim"] != null)) {
-                    base.Tables.Add(new deneyimDataTable(ds.Tables["deneyim"]));
+                if ((ds.Tables["Deneyim_tbl"] != null)) {
+                    base.Tables.Add(new Deneyim_tblDataTable(ds.Tables["Deneyim_tbl"]));
                 }
-                if ((ds.Tables["egitim"] != null)) {
-                    base.Tables.Add(new egitimDataTable(ds.Tables["egitim"]));
+                if ((ds.Tables["Egitim_tbl"] != null)) {
+                    base.Tables.Add(new Egitim_tblDataTable(ds.Tables["Egitim_tbl"]));
                 }
-                if ((ds.Tables["hobiler"] != null)) {
-                    base.Tables.Add(new hobilerDataTable(ds.Tables["hobiler"]));
+                if ((ds.Tables["Hobiler_tbl"] != null)) {
+                    base.Tables.Add(new Hobiler_tblDataTable(ds.Tables["Hobiler_tbl"]));
                 }
-                if ((ds.Tables["sertifika"] != null)) {
-                    base.Tables.Add(new sertifikaDataTable(ds.Tables["sertifika"]));
+                if ((ds.Tables["Sertifika_tbl"] != null)) {
+                    base.Tables.Add(new Sertifika_tblDataTable(ds.Tables["Sertifika_tbl"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -99,9 +99,9 @@ namespace WebApplication1 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public hakkımdaDataTable hakkımda {
+        public Hakkimda_tblDataTable Hakkimda_tbl {
             get {
-                return this.tablehakkımda;
+                return this.tableHakkimda_tbl;
             }
         }
         
@@ -109,9 +109,9 @@ namespace WebApplication1 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public deneyimDataTable deneyim {
+        public Deneyim_tblDataTable Deneyim_tbl {
             get {
-                return this.tabledeneyim;
+                return this.tableDeneyim_tbl;
             }
         }
         
@@ -119,9 +119,9 @@ namespace WebApplication1 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public egitimDataTable egitim {
+        public Egitim_tblDataTable Egitim_tbl {
             get {
-                return this.tableegitim;
+                return this.tableEgitim_tbl;
             }
         }
         
@@ -129,9 +129,9 @@ namespace WebApplication1 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public hobilerDataTable hobiler {
+        public Hobiler_tblDataTable Hobiler_tbl {
             get {
-                return this.tablehobiler;
+                return this.tableHobiler_tbl;
             }
         }
         
@@ -139,9 +139,9 @@ namespace WebApplication1 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public sertifikaDataTable sertifika {
+        public Sertifika_tblDataTable Sertifika_tbl {
             get {
-                return this.tablesertifika;
+                return this.tableSertifika_tbl;
             }
         }
         
@@ -212,20 +212,20 @@ namespace WebApplication1 {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["hakkımda"] != null)) {
-                    base.Tables.Add(new hakkımdaDataTable(ds.Tables["hakkımda"]));
+                if ((ds.Tables["Hakkimda_tbl"] != null)) {
+                    base.Tables.Add(new Hakkimda_tblDataTable(ds.Tables["Hakkimda_tbl"]));
                 }
-                if ((ds.Tables["deneyim"] != null)) {
-                    base.Tables.Add(new deneyimDataTable(ds.Tables["deneyim"]));
+                if ((ds.Tables["Deneyim_tbl"] != null)) {
+                    base.Tables.Add(new Deneyim_tblDataTable(ds.Tables["Deneyim_tbl"]));
                 }
-                if ((ds.Tables["egitim"] != null)) {
-                    base.Tables.Add(new egitimDataTable(ds.Tables["egitim"]));
+                if ((ds.Tables["Egitim_tbl"] != null)) {
+                    base.Tables.Add(new Egitim_tblDataTable(ds.Tables["Egitim_tbl"]));
                 }
-                if ((ds.Tables["hobiler"] != null)) {
-                    base.Tables.Add(new hobilerDataTable(ds.Tables["hobiler"]));
+                if ((ds.Tables["Hobiler_tbl"] != null)) {
+                    base.Tables.Add(new Hobiler_tblDataTable(ds.Tables["Hobiler_tbl"]));
                 }
-                if ((ds.Tables["sertifika"] != null)) {
-                    base.Tables.Add(new sertifikaDataTable(ds.Tables["sertifika"]));
+                if ((ds.Tables["Sertifika_tbl"] != null)) {
+                    base.Tables.Add(new Sertifika_tblDataTable(ds.Tables["Sertifika_tbl"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -260,34 +260,34 @@ namespace WebApplication1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablehakkımda = ((hakkımdaDataTable)(base.Tables["hakkımda"]));
+            this.tableHakkimda_tbl = ((Hakkimda_tblDataTable)(base.Tables["Hakkimda_tbl"]));
             if ((initTable == true)) {
-                if ((this.tablehakkımda != null)) {
-                    this.tablehakkımda.InitVars();
+                if ((this.tableHakkimda_tbl != null)) {
+                    this.tableHakkimda_tbl.InitVars();
                 }
             }
-            this.tabledeneyim = ((deneyimDataTable)(base.Tables["deneyim"]));
+            this.tableDeneyim_tbl = ((Deneyim_tblDataTable)(base.Tables["Deneyim_tbl"]));
             if ((initTable == true)) {
-                if ((this.tabledeneyim != null)) {
-                    this.tabledeneyim.InitVars();
+                if ((this.tableDeneyim_tbl != null)) {
+                    this.tableDeneyim_tbl.InitVars();
                 }
             }
-            this.tableegitim = ((egitimDataTable)(base.Tables["egitim"]));
+            this.tableEgitim_tbl = ((Egitim_tblDataTable)(base.Tables["Egitim_tbl"]));
             if ((initTable == true)) {
-                if ((this.tableegitim != null)) {
-                    this.tableegitim.InitVars();
+                if ((this.tableEgitim_tbl != null)) {
+                    this.tableEgitim_tbl.InitVars();
                 }
             }
-            this.tablehobiler = ((hobilerDataTable)(base.Tables["hobiler"]));
+            this.tableHobiler_tbl = ((Hobiler_tblDataTable)(base.Tables["Hobiler_tbl"]));
             if ((initTable == true)) {
-                if ((this.tablehobiler != null)) {
-                    this.tablehobiler.InitVars();
+                if ((this.tableHobiler_tbl != null)) {
+                    this.tableHobiler_tbl.InitVars();
                 }
             }
-            this.tablesertifika = ((sertifikaDataTable)(base.Tables["sertifika"]));
+            this.tableSertifika_tbl = ((Sertifika_tblDataTable)(base.Tables["Sertifika_tbl"]));
             if ((initTable == true)) {
-                if ((this.tablesertifika != null)) {
-                    this.tablesertifika.InitVars();
+                if ((this.tableSertifika_tbl != null)) {
+                    this.tableSertifika_tbl.InitVars();
                 }
             }
         }
@@ -300,45 +300,45 @@ namespace WebApplication1 {
             this.Namespace = "http://tempuri.org/DataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablehakkımda = new hakkımdaDataTable();
-            base.Tables.Add(this.tablehakkımda);
-            this.tabledeneyim = new deneyimDataTable();
-            base.Tables.Add(this.tabledeneyim);
-            this.tableegitim = new egitimDataTable();
-            base.Tables.Add(this.tableegitim);
-            this.tablehobiler = new hobilerDataTable();
-            base.Tables.Add(this.tablehobiler);
-            this.tablesertifika = new sertifikaDataTable();
-            base.Tables.Add(this.tablesertifika);
+            this.tableHakkimda_tbl = new Hakkimda_tblDataTable();
+            base.Tables.Add(this.tableHakkimda_tbl);
+            this.tableDeneyim_tbl = new Deneyim_tblDataTable();
+            base.Tables.Add(this.tableDeneyim_tbl);
+            this.tableEgitim_tbl = new Egitim_tblDataTable();
+            base.Tables.Add(this.tableEgitim_tbl);
+            this.tableHobiler_tbl = new Hobiler_tblDataTable();
+            base.Tables.Add(this.tableHobiler_tbl);
+            this.tableSertifika_tbl = new Sertifika_tblDataTable();
+            base.Tables.Add(this.tableSertifika_tbl);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializehakkımda() {
+        private bool ShouldSerializeHakkimda_tbl() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializedeneyim() {
+        private bool ShouldSerializeDeneyim_tbl() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeegitim() {
+        private bool ShouldSerializeEgitim_tbl() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializehobiler() {
+        private bool ShouldSerializeHobiler_tbl() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializesertifika() {
+        private bool ShouldSerializeSertifika_tbl() {
             return false;
         }
         
@@ -398,26 +398,26 @@ namespace WebApplication1 {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void hakkımdaRowChangeEventHandler(object sender, hakkımdaRowChangeEvent e);
+        public delegate void Hakkimda_tblRowChangeEventHandler(object sender, Hakkimda_tblRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void deneyimRowChangeEventHandler(object sender, deneyimRowChangeEvent e);
+        public delegate void Deneyim_tblRowChangeEventHandler(object sender, Deneyim_tblRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void egitimRowChangeEventHandler(object sender, egitimRowChangeEvent e);
+        public delegate void Egitim_tblRowChangeEventHandler(object sender, Egitim_tblRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void hobilerRowChangeEventHandler(object sender, hobilerRowChangeEvent e);
+        public delegate void Hobiler_tblRowChangeEventHandler(object sender, Hobiler_tblRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void sertifikaRowChangeEventHandler(object sender, sertifikaRowChangeEvent e);
+        public delegate void Sertifika_tblRowChangeEventHandler(object sender, Sertifika_tblRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class hakkımdaDataTable : global::System.Data.TypedTableBase<hakkımdaRow> {
+        public partial class Hakkimda_tblDataTable : global::System.Data.TypedTableBase<Hakkimda_tblRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -435,26 +435,10 @@ namespace WebApplication1 {
             
             private global::System.Data.DataColumn columnfotograf;
             
-            private global::System.Data.DataColumn columnExpr1;
-            
-            private global::System.Data.DataColumn columnExpr2;
-            
-            private global::System.Data.DataColumn columnExpr3;
-            
-            private global::System.Data.DataColumn columnExpr4;
-            
-            private global::System.Data.DataColumn columnExpr5;
-            
-            private global::System.Data.DataColumn columnExpr6;
-            
-            private global::System.Data.DataColumn columnExpr7;
-            
-            private global::System.Data.DataColumn columnExpr8;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hakkımdaDataTable() {
-                this.TableName = "hakkımda";
+            public Hakkimda_tblDataTable() {
+                this.TableName = "Hakkimda_tbl";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -462,7 +446,7 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal hakkımdaDataTable(global::System.Data.DataTable table) {
+            internal Hakkimda_tblDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -479,7 +463,7 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected hakkımdaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Hakkimda_tblDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -550,70 +534,6 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Expr1Column {
-                get {
-                    return this.columnExpr1;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Expr2Column {
-                get {
-                    return this.columnExpr2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Expr3Column {
-                get {
-                    return this.columnExpr3;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Expr4Column {
-                get {
-                    return this.columnExpr4;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Expr5Column {
-                get {
-                    return this.columnExpr5;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Expr6Column {
-                get {
-                    return this.columnExpr6;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Expr7Column {
-                get {
-                    return this.columnExpr7;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Expr8Column {
-                get {
-                    return this.columnExpr8;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -623,34 +543,34 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hakkımdaRow this[int index] {
+            public Hakkimda_tblRow this[int index] {
                 get {
-                    return ((hakkımdaRow)(this.Rows[index]));
+                    return ((Hakkimda_tblRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event hakkımdaRowChangeEventHandler hakkımdaRowChanging;
+            public event Hakkimda_tblRowChangeEventHandler Hakkimda_tblRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event hakkımdaRowChangeEventHandler hakkımdaRowChanged;
+            public event Hakkimda_tblRowChangeEventHandler Hakkimda_tblRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event hakkımdaRowChangeEventHandler hakkımdaRowDeleting;
+            public event Hakkimda_tblRowChangeEventHandler Hakkimda_tblRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event hakkımdaRowChangeEventHandler hakkımdaRowDeleted;
+            public event Hakkimda_tblRowChangeEventHandler Hakkimda_tblRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddhakkımdaRow(hakkımdaRow row) {
+            public void AddHakkimda_tblRow(Hakkimda_tblRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hakkımdaRow AddhakkımdaRow(string AD, string SOYAD, string ADRES, string MAIL, string TELEFON, string ACIKLAMA, string fotograf, string Expr2, string Expr3, string Expr4, string Expr5, string Expr6, string Expr7, string Expr8) {
-                hakkımdaRow rowhakkımdaRow = ((hakkımdaRow)(this.NewRow()));
+            public Hakkimda_tblRow AddHakkimda_tblRow(string AD, string SOYAD, string ADRES, string MAIL, string TELEFON, string ACIKLAMA, string fotograf) {
+                Hakkimda_tblRow rowHakkimda_tblRow = ((Hakkimda_tblRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         AD,
@@ -659,24 +579,16 @@ namespace WebApplication1 {
                         MAIL,
                         TELEFON,
                         ACIKLAMA,
-                        fotograf,
-                        null,
-                        Expr2,
-                        Expr3,
-                        Expr4,
-                        Expr5,
-                        Expr6,
-                        Expr7,
-                        Expr8};
-                rowhakkımdaRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowhakkımdaRow);
-                return rowhakkımdaRow;
+                        fotograf};
+                rowHakkimda_tblRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowHakkimda_tblRow);
+                return rowHakkimda_tblRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                hakkımdaDataTable cln = ((hakkımdaDataTable)(base.Clone()));
+                Hakkimda_tblDataTable cln = ((Hakkimda_tblDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -684,7 +596,7 @@ namespace WebApplication1 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new hakkımdaDataTable();
+                return new Hakkimda_tblDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -698,14 +610,6 @@ namespace WebApplication1 {
                 this.columnTELEFON = base.Columns["TELEFON"];
                 this.columnACIKLAMA = base.Columns["ACIKLAMA"];
                 this.columnfotograf = base.Columns["fotograf"];
-                this.columnExpr1 = base.Columns["Expr1"];
-                this.columnExpr2 = base.Columns["Expr2"];
-                this.columnExpr3 = base.Columns["Expr3"];
-                this.columnExpr4 = base.Columns["Expr4"];
-                this.columnExpr5 = base.Columns["Expr5"];
-                this.columnExpr6 = base.Columns["Expr6"];
-                this.columnExpr7 = base.Columns["Expr7"];
-                this.columnExpr8 = base.Columns["Expr8"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -727,22 +631,6 @@ namespace WebApplication1 {
                 base.Columns.Add(this.columnACIKLAMA);
                 this.columnfotograf = new global::System.Data.DataColumn("fotograf", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnfotograf);
-                this.columnExpr1 = new global::System.Data.DataColumn("Expr1", typeof(short), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExpr1);
-                this.columnExpr2 = new global::System.Data.DataColumn("Expr2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExpr2);
-                this.columnExpr3 = new global::System.Data.DataColumn("Expr3", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExpr3);
-                this.columnExpr4 = new global::System.Data.DataColumn("Expr4", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExpr4);
-                this.columnExpr5 = new global::System.Data.DataColumn("Expr5", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExpr5);
-                this.columnExpr6 = new global::System.Data.DataColumn("Expr6", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExpr6);
-                this.columnExpr7 = new global::System.Data.DataColumn("Expr7", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExpr7);
-                this.columnExpr8 = new global::System.Data.DataColumn("Expr8", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExpr8);
                 this.columnID.AutoIncrement = true;
                 this.columnID.AutoIncrementSeed = -1;
                 this.columnID.AutoIncrementStep = -1;
@@ -755,44 +643,32 @@ namespace WebApplication1 {
                 this.columnTELEFON.MaxLength = 20;
                 this.columnACIKLAMA.MaxLength = 1000;
                 this.columnfotograf.MaxLength = 2147483647;
-                this.columnExpr1.AutoIncrement = true;
-                this.columnExpr1.AutoIncrementSeed = -1;
-                this.columnExpr1.AutoIncrementStep = -1;
-                this.columnExpr1.AllowDBNull = false;
-                this.columnExpr1.ReadOnly = true;
-                this.columnExpr2.MaxLength = 20;
-                this.columnExpr3.MaxLength = 20;
-                this.columnExpr4.MaxLength = 100;
-                this.columnExpr5.MaxLength = 20;
-                this.columnExpr6.MaxLength = 20;
-                this.columnExpr7.MaxLength = 1000;
-                this.columnExpr8.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hakkımdaRow NewhakkımdaRow() {
-                return ((hakkımdaRow)(this.NewRow()));
+            public Hakkimda_tblRow NewHakkimda_tblRow() {
+                return ((Hakkimda_tblRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new hakkımdaRow(builder);
+                return new Hakkimda_tblRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(hakkımdaRow);
+                return typeof(Hakkimda_tblRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.hakkımdaRowChanged != null)) {
-                    this.hakkımdaRowChanged(this, new hakkımdaRowChangeEvent(((hakkımdaRow)(e.Row)), e.Action));
+                if ((this.Hakkimda_tblRowChanged != null)) {
+                    this.Hakkimda_tblRowChanged(this, new Hakkimda_tblRowChangeEvent(((Hakkimda_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -800,8 +676,8 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.hakkımdaRowChanging != null)) {
-                    this.hakkımdaRowChanging(this, new hakkımdaRowChangeEvent(((hakkımdaRow)(e.Row)), e.Action));
+                if ((this.Hakkimda_tblRowChanging != null)) {
+                    this.Hakkimda_tblRowChanging(this, new Hakkimda_tblRowChangeEvent(((Hakkimda_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -809,8 +685,8 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.hakkımdaRowDeleted != null)) {
-                    this.hakkımdaRowDeleted(this, new hakkımdaRowChangeEvent(((hakkımdaRow)(e.Row)), e.Action));
+                if ((this.Hakkimda_tblRowDeleted != null)) {
+                    this.Hakkimda_tblRowDeleted(this, new Hakkimda_tblRowChangeEvent(((Hakkimda_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -818,14 +694,14 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.hakkımdaRowDeleting != null)) {
-                    this.hakkımdaRowDeleting(this, new hakkımdaRowChangeEvent(((hakkımdaRow)(e.Row)), e.Action));
+                if ((this.Hakkimda_tblRowDeleting != null)) {
+                    this.Hakkimda_tblRowDeleting(this, new Hakkimda_tblRowChangeEvent(((Hakkimda_tblRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemovehakkımdaRow(hakkımdaRow row) {
+            public void RemoveHakkimda_tblRow(Hakkimda_tblRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -852,7 +728,7 @@ namespace WebApplication1 {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "hakkımdaDataTable";
+                attribute2.FixedValue = "Hakkimda_tblDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -898,7 +774,7 @@ namespace WebApplication1 {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class deneyimDataTable : global::System.Data.TypedTableBase<deneyimRow> {
+        public partial class Deneyim_tblDataTable : global::System.Data.TypedTableBase<Deneyim_tblRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -912,8 +788,8 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public deneyimDataTable() {
-                this.TableName = "deneyim";
+            public Deneyim_tblDataTable() {
+                this.TableName = "Deneyim_tbl";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -921,7 +797,7 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal deneyimDataTable(global::System.Data.DataTable table) {
+            internal Deneyim_tblDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -938,7 +814,7 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected deneyimDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Deneyim_tblDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -994,49 +870,49 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public deneyimRow this[int index] {
+            public Deneyim_tblRow this[int index] {
                 get {
-                    return ((deneyimRow)(this.Rows[index]));
+                    return ((Deneyim_tblRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event deneyimRowChangeEventHandler deneyimRowChanging;
+            public event Deneyim_tblRowChangeEventHandler Deneyim_tblRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event deneyimRowChangeEventHandler deneyimRowChanged;
+            public event Deneyim_tblRowChangeEventHandler Deneyim_tblRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event deneyimRowChangeEventHandler deneyimRowDeleting;
+            public event Deneyim_tblRowChangeEventHandler Deneyim_tblRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event deneyimRowChangeEventHandler deneyimRowDeleted;
+            public event Deneyim_tblRowChangeEventHandler Deneyim_tblRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AdddeneyimRow(deneyimRow row) {
+            public void AddDeneyim_tblRow(Deneyim_tblRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public deneyimRow AdddeneyimRow(short ID, string BASLIK, string ALTBASLIK, string ACIKLAMA, string TARIH) {
-                deneyimRow rowdeneyimRow = ((deneyimRow)(this.NewRow()));
+            public Deneyim_tblRow AddDeneyim_tblRow(string BASLIK, string ALTBASLIK, string ACIKLAMA, string TARIH) {
+                Deneyim_tblRow rowDeneyim_tblRow = ((Deneyim_tblRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ID,
+                        null,
                         BASLIK,
                         ALTBASLIK,
                         ACIKLAMA,
                         TARIH};
-                rowdeneyimRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowdeneyimRow);
-                return rowdeneyimRow;
+                rowDeneyim_tblRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDeneyim_tblRow);
+                return rowDeneyim_tblRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                deneyimDataTable cln = ((deneyimDataTable)(base.Clone()));
+                Deneyim_tblDataTable cln = ((Deneyim_tblDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -1044,7 +920,7 @@ namespace WebApplication1 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new deneyimDataTable();
+                return new Deneyim_tblDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1070,36 +946,41 @@ namespace WebApplication1 {
                 base.Columns.Add(this.columnACIKLAMA);
                 this.columnTARIH = new global::System.Data.DataColumn("TARIH", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTARIH);
+                this.columnID.AutoIncrement = true;
+                this.columnID.AutoIncrementSeed = -1;
+                this.columnID.AutoIncrementStep = -1;
+                this.columnID.AllowDBNull = false;
+                this.columnID.ReadOnly = true;
                 this.columnBASLIK.MaxLength = 50;
-                this.columnALTBASLIK.MaxLength = 50;
-                this.columnACIKLAMA.MaxLength = 1000;
+                this.columnALTBASLIK.MaxLength = 550;
+                this.columnACIKLAMA.MaxLength = 2000;
                 this.columnTARIH.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public deneyimRow NewdeneyimRow() {
-                return ((deneyimRow)(this.NewRow()));
+            public Deneyim_tblRow NewDeneyim_tblRow() {
+                return ((Deneyim_tblRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new deneyimRow(builder);
+                return new Deneyim_tblRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(deneyimRow);
+                return typeof(Deneyim_tblRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.deneyimRowChanged != null)) {
-                    this.deneyimRowChanged(this, new deneyimRowChangeEvent(((deneyimRow)(e.Row)), e.Action));
+                if ((this.Deneyim_tblRowChanged != null)) {
+                    this.Deneyim_tblRowChanged(this, new Deneyim_tblRowChangeEvent(((Deneyim_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1107,8 +988,8 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.deneyimRowChanging != null)) {
-                    this.deneyimRowChanging(this, new deneyimRowChangeEvent(((deneyimRow)(e.Row)), e.Action));
+                if ((this.Deneyim_tblRowChanging != null)) {
+                    this.Deneyim_tblRowChanging(this, new Deneyim_tblRowChangeEvent(((Deneyim_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1116,8 +997,8 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.deneyimRowDeleted != null)) {
-                    this.deneyimRowDeleted(this, new deneyimRowChangeEvent(((deneyimRow)(e.Row)), e.Action));
+                if ((this.Deneyim_tblRowDeleted != null)) {
+                    this.Deneyim_tblRowDeleted(this, new Deneyim_tblRowChangeEvent(((Deneyim_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1125,14 +1006,14 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.deneyimRowDeleting != null)) {
-                    this.deneyimRowDeleting(this, new deneyimRowChangeEvent(((deneyimRow)(e.Row)), e.Action));
+                if ((this.Deneyim_tblRowDeleting != null)) {
+                    this.Deneyim_tblRowDeleting(this, new Deneyim_tblRowChangeEvent(((Deneyim_tblRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemovedeneyimRow(deneyimRow row) {
+            public void RemoveDeneyim_tblRow(Deneyim_tblRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1159,7 +1040,7 @@ namespace WebApplication1 {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "deneyimDataTable";
+                attribute2.FixedValue = "Deneyim_tblDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1205,7 +1086,7 @@ namespace WebApplication1 {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class egitimDataTable : global::System.Data.TypedTableBase<egitimRow> {
+        public partial class Egitim_tblDataTable : global::System.Data.TypedTableBase<Egitim_tblRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -1221,8 +1102,8 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public egitimDataTable() {
-                this.TableName = "egitim";
+            public Egitim_tblDataTable() {
+                this.TableName = "Egitim_tbl";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -1230,7 +1111,7 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal egitimDataTable(global::System.Data.DataTable table) {
+            internal Egitim_tblDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -1247,7 +1128,7 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected egitimDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Egitim_tblDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -1311,50 +1192,50 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public egitimRow this[int index] {
+            public Egitim_tblRow this[int index] {
                 get {
-                    return ((egitimRow)(this.Rows[index]));
+                    return ((Egitim_tblRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event egitimRowChangeEventHandler egitimRowChanging;
+            public event Egitim_tblRowChangeEventHandler Egitim_tblRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event egitimRowChangeEventHandler egitimRowChanged;
+            public event Egitim_tblRowChangeEventHandler Egitim_tblRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event egitimRowChangeEventHandler egitimRowDeleting;
+            public event Egitim_tblRowChangeEventHandler Egitim_tblRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event egitimRowChangeEventHandler egitimRowDeleted;
+            public event Egitim_tblRowChangeEventHandler Egitim_tblRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddegitimRow(egitimRow row) {
+            public void AddEgitim_tblRow(Egitim_tblRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public egitimRow AddegitimRow(short ID, string BASLIK, string ALTBASLIK, string ACIKLAMA, string GNO, string TARİH) {
-                egitimRow rowegitimRow = ((egitimRow)(this.NewRow()));
+            public Egitim_tblRow AddEgitim_tblRow(string BASLIK, string ALTBASLIK, string ACIKLAMA, string GNO, string TARİH) {
+                Egitim_tblRow rowEgitim_tblRow = ((Egitim_tblRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ID,
+                        null,
                         BASLIK,
                         ALTBASLIK,
                         ACIKLAMA,
                         GNO,
                         TARİH};
-                rowegitimRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowegitimRow);
-                return rowegitimRow;
+                rowEgitim_tblRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowEgitim_tblRow);
+                return rowEgitim_tblRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                egitimDataTable cln = ((egitimDataTable)(base.Clone()));
+                Egitim_tblDataTable cln = ((Egitim_tblDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -1362,7 +1243,7 @@ namespace WebApplication1 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new egitimDataTable();
+                return new Egitim_tblDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1391,37 +1272,42 @@ namespace WebApplication1 {
                 base.Columns.Add(this.columnGNO);
                 this.columnTARİH = new global::System.Data.DataColumn("TARİH", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTARİH);
+                this.columnID.AutoIncrement = true;
+                this.columnID.AutoIncrementSeed = -1;
+                this.columnID.AutoIncrementStep = -1;
+                this.columnID.AllowDBNull = false;
+                this.columnID.ReadOnly = true;
                 this.columnBASLIK.MaxLength = 50;
                 this.columnALTBASLIK.MaxLength = 50;
-                this.columnACIKLAMA.MaxLength = 250;
+                this.columnACIKLAMA.MaxLength = 500;
                 this.columnGNO.MaxLength = 50;
                 this.columnTARİH.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public egitimRow NewegitimRow() {
-                return ((egitimRow)(this.NewRow()));
+            public Egitim_tblRow NewEgitim_tblRow() {
+                return ((Egitim_tblRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new egitimRow(builder);
+                return new Egitim_tblRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(egitimRow);
+                return typeof(Egitim_tblRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.egitimRowChanged != null)) {
-                    this.egitimRowChanged(this, new egitimRowChangeEvent(((egitimRow)(e.Row)), e.Action));
+                if ((this.Egitim_tblRowChanged != null)) {
+                    this.Egitim_tblRowChanged(this, new Egitim_tblRowChangeEvent(((Egitim_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1429,8 +1315,8 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.egitimRowChanging != null)) {
-                    this.egitimRowChanging(this, new egitimRowChangeEvent(((egitimRow)(e.Row)), e.Action));
+                if ((this.Egitim_tblRowChanging != null)) {
+                    this.Egitim_tblRowChanging(this, new Egitim_tblRowChangeEvent(((Egitim_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1438,8 +1324,8 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.egitimRowDeleted != null)) {
-                    this.egitimRowDeleted(this, new egitimRowChangeEvent(((egitimRow)(e.Row)), e.Action));
+                if ((this.Egitim_tblRowDeleted != null)) {
+                    this.Egitim_tblRowDeleted(this, new Egitim_tblRowChangeEvent(((Egitim_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1447,14 +1333,14 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.egitimRowDeleting != null)) {
-                    this.egitimRowDeleting(this, new egitimRowChangeEvent(((egitimRow)(e.Row)), e.Action));
+                if ((this.Egitim_tblRowDeleting != null)) {
+                    this.Egitim_tblRowDeleting(this, new Egitim_tblRowChangeEvent(((Egitim_tblRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveegitimRow(egitimRow row) {
+            public void RemoveEgitim_tblRow(Egitim_tblRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1481,7 +1367,7 @@ namespace WebApplication1 {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "egitimDataTable";
+                attribute2.FixedValue = "Egitim_tblDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1527,7 +1413,7 @@ namespace WebApplication1 {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class hobilerDataTable : global::System.Data.TypedTableBase<hobilerRow> {
+        public partial class Hobiler_tblDataTable : global::System.Data.TypedTableBase<Hobiler_tblRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -1535,8 +1421,8 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hobilerDataTable() {
-                this.TableName = "hobiler";
+            public Hobiler_tblDataTable() {
+                this.TableName = "Hobiler_tbl";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -1544,7 +1430,7 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal hobilerDataTable(global::System.Data.DataTable table) {
+            internal Hobiler_tblDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -1561,7 +1447,7 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected hobilerDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Hobiler_tblDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -1593,46 +1479,46 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hobilerRow this[int index] {
+            public Hobiler_tblRow this[int index] {
                 get {
-                    return ((hobilerRow)(this.Rows[index]));
+                    return ((Hobiler_tblRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event hobilerRowChangeEventHandler hobilerRowChanging;
+            public event Hobiler_tblRowChangeEventHandler Hobiler_tblRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event hobilerRowChangeEventHandler hobilerRowChanged;
+            public event Hobiler_tblRowChangeEventHandler Hobiler_tblRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event hobilerRowChangeEventHandler hobilerRowDeleting;
+            public event Hobiler_tblRowChangeEventHandler Hobiler_tblRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event hobilerRowChangeEventHandler hobilerRowDeleted;
+            public event Hobiler_tblRowChangeEventHandler Hobiler_tblRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddhobilerRow(hobilerRow row) {
+            public void AddHobiler_tblRow(Hobiler_tblRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hobilerRow AddhobilerRow(short ID, string hobi) {
-                hobilerRow rowhobilerRow = ((hobilerRow)(this.NewRow()));
+            public Hobiler_tblRow AddHobiler_tblRow(short ID, string hobi) {
+                Hobiler_tblRow rowHobiler_tblRow = ((Hobiler_tblRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
                         hobi};
-                rowhobilerRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowhobilerRow);
-                return rowhobilerRow;
+                rowHobiler_tblRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowHobiler_tblRow);
+                return rowHobiler_tblRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                hobilerDataTable cln = ((hobilerDataTable)(base.Clone()));
+                Hobiler_tblDataTable cln = ((Hobiler_tblDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -1640,7 +1526,7 @@ namespace WebApplication1 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new hobilerDataTable();
+                return new Hobiler_tblDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1662,28 +1548,28 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hobilerRow NewhobilerRow() {
-                return ((hobilerRow)(this.NewRow()));
+            public Hobiler_tblRow NewHobiler_tblRow() {
+                return ((Hobiler_tblRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new hobilerRow(builder);
+                return new Hobiler_tblRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(hobilerRow);
+                return typeof(Hobiler_tblRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.hobilerRowChanged != null)) {
-                    this.hobilerRowChanged(this, new hobilerRowChangeEvent(((hobilerRow)(e.Row)), e.Action));
+                if ((this.Hobiler_tblRowChanged != null)) {
+                    this.Hobiler_tblRowChanged(this, new Hobiler_tblRowChangeEvent(((Hobiler_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1691,8 +1577,8 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.hobilerRowChanging != null)) {
-                    this.hobilerRowChanging(this, new hobilerRowChangeEvent(((hobilerRow)(e.Row)), e.Action));
+                if ((this.Hobiler_tblRowChanging != null)) {
+                    this.Hobiler_tblRowChanging(this, new Hobiler_tblRowChangeEvent(((Hobiler_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1700,8 +1586,8 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.hobilerRowDeleted != null)) {
-                    this.hobilerRowDeleted(this, new hobilerRowChangeEvent(((hobilerRow)(e.Row)), e.Action));
+                if ((this.Hobiler_tblRowDeleted != null)) {
+                    this.Hobiler_tblRowDeleted(this, new Hobiler_tblRowChangeEvent(((Hobiler_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1709,14 +1595,14 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.hobilerRowDeleting != null)) {
-                    this.hobilerRowDeleting(this, new hobilerRowChangeEvent(((hobilerRow)(e.Row)), e.Action));
+                if ((this.Hobiler_tblRowDeleting != null)) {
+                    this.Hobiler_tblRowDeleting(this, new Hobiler_tblRowChangeEvent(((Hobiler_tblRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemovehobilerRow(hobilerRow row) {
+            public void RemoveHobiler_tblRow(Hobiler_tblRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1743,7 +1629,7 @@ namespace WebApplication1 {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "hobilerDataTable";
+                attribute2.FixedValue = "Hobiler_tblDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1789,7 +1675,7 @@ namespace WebApplication1 {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class sertifikaDataTable : global::System.Data.TypedTableBase<sertifikaRow> {
+        public partial class Sertifika_tblDataTable : global::System.Data.TypedTableBase<Sertifika_tblRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -1797,8 +1683,8 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sertifikaDataTable() {
-                this.TableName = "sertifika";
+            public Sertifika_tblDataTable() {
+                this.TableName = "Sertifika_tbl";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -1806,7 +1692,7 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal sertifikaDataTable(global::System.Data.DataTable table) {
+            internal Sertifika_tblDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -1823,7 +1709,7 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected sertifikaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Sertifika_tblDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -1855,46 +1741,46 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sertifikaRow this[int index] {
+            public Sertifika_tblRow this[int index] {
                 get {
-                    return ((sertifikaRow)(this.Rows[index]));
+                    return ((Sertifika_tblRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event sertifikaRowChangeEventHandler sertifikaRowChanging;
+            public event Sertifika_tblRowChangeEventHandler Sertifika_tblRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event sertifikaRowChangeEventHandler sertifikaRowChanged;
+            public event Sertifika_tblRowChangeEventHandler Sertifika_tblRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event sertifikaRowChangeEventHandler sertifikaRowDeleting;
+            public event Sertifika_tblRowChangeEventHandler Sertifika_tblRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event sertifikaRowChangeEventHandler sertifikaRowDeleted;
+            public event Sertifika_tblRowChangeEventHandler Sertifika_tblRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddsertifikaRow(sertifikaRow row) {
+            public void AddSertifika_tblRow(Sertifika_tblRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sertifikaRow AddsertifikaRow(string setifika) {
-                sertifikaRow rowsertifikaRow = ((sertifikaRow)(this.NewRow()));
+            public Sertifika_tblRow AddSertifika_tblRow(string setifika) {
+                Sertifika_tblRow rowSertifika_tblRow = ((Sertifika_tblRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         setifika};
-                rowsertifikaRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowsertifikaRow);
-                return rowsertifikaRow;
+                rowSertifika_tblRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSertifika_tblRow);
+                return rowSertifika_tblRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                sertifikaDataTable cln = ((sertifikaDataTable)(base.Clone()));
+                Sertifika_tblDataTable cln = ((Sertifika_tblDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -1902,7 +1788,7 @@ namespace WebApplication1 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new sertifikaDataTable();
+                return new Sertifika_tblDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1929,28 +1815,28 @@ namespace WebApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sertifikaRow NewsertifikaRow() {
-                return ((sertifikaRow)(this.NewRow()));
+            public Sertifika_tblRow NewSertifika_tblRow() {
+                return ((Sertifika_tblRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new sertifikaRow(builder);
+                return new Sertifika_tblRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(sertifikaRow);
+                return typeof(Sertifika_tblRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.sertifikaRowChanged != null)) {
-                    this.sertifikaRowChanged(this, new sertifikaRowChangeEvent(((sertifikaRow)(e.Row)), e.Action));
+                if ((this.Sertifika_tblRowChanged != null)) {
+                    this.Sertifika_tblRowChanged(this, new Sertifika_tblRowChangeEvent(((Sertifika_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1958,8 +1844,8 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.sertifikaRowChanging != null)) {
-                    this.sertifikaRowChanging(this, new sertifikaRowChangeEvent(((sertifikaRow)(e.Row)), e.Action));
+                if ((this.Sertifika_tblRowChanging != null)) {
+                    this.Sertifika_tblRowChanging(this, new Sertifika_tblRowChangeEvent(((Sertifika_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1967,8 +1853,8 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.sertifikaRowDeleted != null)) {
-                    this.sertifikaRowDeleted(this, new sertifikaRowChangeEvent(((sertifikaRow)(e.Row)), e.Action));
+                if ((this.Sertifika_tblRowDeleted != null)) {
+                    this.Sertifika_tblRowDeleted(this, new Sertifika_tblRowChangeEvent(((Sertifika_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1976,14 +1862,14 @@ namespace WebApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.sertifikaRowDeleting != null)) {
-                    this.sertifikaRowDeleting(this, new sertifikaRowChangeEvent(((sertifikaRow)(e.Row)), e.Action));
+                if ((this.Sertifika_tblRowDeleting != null)) {
+                    this.Sertifika_tblRowDeleting(this, new Sertifika_tblRowChangeEvent(((Sertifika_tblRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemovesertifikaRow(sertifikaRow row) {
+            public void RemoveSertifika_tblRow(Sertifika_tblRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -2010,7 +1896,7 @@ namespace WebApplication1 {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "sertifikaDataTable";
+                attribute2.FixedValue = "Sertifika_tblDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -2054,25 +1940,25 @@ namespace WebApplication1 {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class hakkımdaRow : global::System.Data.DataRow {
+        public partial class Hakkimda_tblRow : global::System.Data.DataRow {
             
-            private hakkımdaDataTable tablehakkımda;
+            private Hakkimda_tblDataTable tableHakkimda_tbl;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal hakkımdaRow(global::System.Data.DataRowBuilder rb) : 
+            internal Hakkimda_tblRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablehakkımda = ((hakkımdaDataTable)(this.Table));
+                this.tableHakkimda_tbl = ((Hakkimda_tblDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public short ID {
                 get {
-                    return ((short)(this[this.tablehakkımda.IDColumn]));
+                    return ((short)(this[this.tableHakkimda_tbl.IDColumn]));
                 }
                 set {
-                    this[this.tablehakkımda.IDColumn] = value;
+                    this[this.tableHakkimda_tbl.IDColumn] = value;
                 }
             }
             
@@ -2081,14 +1967,14 @@ namespace WebApplication1 {
             public string AD {
                 get {
                     try {
-                        return ((string)(this[this.tablehakkımda.ADColumn]));
+                        return ((string)(this[this.tableHakkimda_tbl.ADColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'AD\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Hakkimda_tbl\' tablosundaki \'AD\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablehakkımda.ADColumn] = value;
+                    this[this.tableHakkimda_tbl.ADColumn] = value;
                 }
             }
             
@@ -2097,14 +1983,14 @@ namespace WebApplication1 {
             public string SOYAD {
                 get {
                     try {
-                        return ((string)(this[this.tablehakkımda.SOYADColumn]));
+                        return ((string)(this[this.tableHakkimda_tbl.SOYADColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'SOYAD\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Hakkimda_tbl\' tablosundaki \'SOYAD\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablehakkımda.SOYADColumn] = value;
+                    this[this.tableHakkimda_tbl.SOYADColumn] = value;
                 }
             }
             
@@ -2113,14 +1999,14 @@ namespace WebApplication1 {
             public string ADRES {
                 get {
                     try {
-                        return ((string)(this[this.tablehakkımda.ADRESColumn]));
+                        return ((string)(this[this.tableHakkimda_tbl.ADRESColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'ADRES\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Hakkimda_tbl\' tablosundaki \'ADRES\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablehakkımda.ADRESColumn] = value;
+                    this[this.tableHakkimda_tbl.ADRESColumn] = value;
                 }
             }
             
@@ -2129,14 +2015,14 @@ namespace WebApplication1 {
             public string MAIL {
                 get {
                     try {
-                        return ((string)(this[this.tablehakkımda.MAILColumn]));
+                        return ((string)(this[this.tableHakkimda_tbl.MAILColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'MAIL\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Hakkimda_tbl\' tablosundaki \'MAIL\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablehakkımda.MAILColumn] = value;
+                    this[this.tableHakkimda_tbl.MAILColumn] = value;
                 }
             }
             
@@ -2145,14 +2031,14 @@ namespace WebApplication1 {
             public string TELEFON {
                 get {
                     try {
-                        return ((string)(this[this.tablehakkımda.TELEFONColumn]));
+                        return ((string)(this[this.tableHakkimda_tbl.TELEFONColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'TELEFON\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Hakkimda_tbl\' tablosundaki \'TELEFON\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablehakkımda.TELEFONColumn] = value;
+                    this[this.tableHakkimda_tbl.TELEFONColumn] = value;
                 }
             }
             
@@ -2161,14 +2047,14 @@ namespace WebApplication1 {
             public string ACIKLAMA {
                 get {
                     try {
-                        return ((string)(this[this.tablehakkımda.ACIKLAMAColumn]));
+                        return ((string)(this[this.tableHakkimda_tbl.ACIKLAMAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'ACIKLAMA\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Hakkimda_tbl\' tablosundaki \'ACIKLAMA\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablehakkımda.ACIKLAMAColumn] = value;
+                    this[this.tableHakkimda_tbl.ACIKLAMAColumn] = value;
                 }
             }
             
@@ -2177,336 +2063,124 @@ namespace WebApplication1 {
             public string fotograf {
                 get {
                     try {
-                        return ((string)(this[this.tablehakkımda.fotografColumn]));
+                        return ((string)(this[this.tableHakkimda_tbl.fotografColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'fotograf\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Hakkimda_tbl\' tablosundaki \'fotograf\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablehakkımda.fotografColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public short Expr1 {
-                get {
-                    return ((short)(this[this.tablehakkımda.Expr1Column]));
-                }
-                set {
-                    this[this.tablehakkımda.Expr1Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Expr2 {
-                get {
-                    try {
-                        return ((string)(this[this.tablehakkımda.Expr2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'Expr2\' sütunun değeri DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablehakkımda.Expr2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Expr3 {
-                get {
-                    try {
-                        return ((string)(this[this.tablehakkımda.Expr3Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'Expr3\' sütunun değeri DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablehakkımda.Expr3Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Expr4 {
-                get {
-                    try {
-                        return ((string)(this[this.tablehakkımda.Expr4Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'Expr4\' sütunun değeri DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablehakkımda.Expr4Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Expr5 {
-                get {
-                    try {
-                        return ((string)(this[this.tablehakkımda.Expr5Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'Expr5\' sütunun değeri DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablehakkımda.Expr5Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Expr6 {
-                get {
-                    try {
-                        return ((string)(this[this.tablehakkımda.Expr6Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'Expr6\' sütunun değeri DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablehakkımda.Expr6Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Expr7 {
-                get {
-                    try {
-                        return ((string)(this[this.tablehakkımda.Expr7Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'Expr7\' sütunun değeri DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablehakkımda.Expr7Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Expr8 {
-                get {
-                    try {
-                        return ((string)(this[this.tablehakkımda.Expr8Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hakkımda\' tablosundaki \'Expr8\' sütunun değeri DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablehakkımda.Expr8Column] = value;
+                    this[this.tableHakkimda_tbl.fotografColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsADNull() {
-                return this.IsNull(this.tablehakkımda.ADColumn);
+                return this.IsNull(this.tableHakkimda_tbl.ADColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetADNull() {
-                this[this.tablehakkımda.ADColumn] = global::System.Convert.DBNull;
+                this[this.tableHakkimda_tbl.ADColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsSOYADNull() {
-                return this.IsNull(this.tablehakkımda.SOYADColumn);
+                return this.IsNull(this.tableHakkimda_tbl.SOYADColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetSOYADNull() {
-                this[this.tablehakkımda.SOYADColumn] = global::System.Convert.DBNull;
+                this[this.tableHakkimda_tbl.SOYADColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsADRESNull() {
-                return this.IsNull(this.tablehakkımda.ADRESColumn);
+                return this.IsNull(this.tableHakkimda_tbl.ADRESColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetADRESNull() {
-                this[this.tablehakkımda.ADRESColumn] = global::System.Convert.DBNull;
+                this[this.tableHakkimda_tbl.ADRESColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsMAILNull() {
-                return this.IsNull(this.tablehakkımda.MAILColumn);
+                return this.IsNull(this.tableHakkimda_tbl.MAILColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetMAILNull() {
-                this[this.tablehakkımda.MAILColumn] = global::System.Convert.DBNull;
+                this[this.tableHakkimda_tbl.MAILColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsTELEFONNull() {
-                return this.IsNull(this.tablehakkımda.TELEFONColumn);
+                return this.IsNull(this.tableHakkimda_tbl.TELEFONColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetTELEFONNull() {
-                this[this.tablehakkımda.TELEFONColumn] = global::System.Convert.DBNull;
+                this[this.tableHakkimda_tbl.TELEFONColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsACIKLAMANull() {
-                return this.IsNull(this.tablehakkımda.ACIKLAMAColumn);
+                return this.IsNull(this.tableHakkimda_tbl.ACIKLAMAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetACIKLAMANull() {
-                this[this.tablehakkımda.ACIKLAMAColumn] = global::System.Convert.DBNull;
+                this[this.tableHakkimda_tbl.ACIKLAMAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsfotografNull() {
-                return this.IsNull(this.tablehakkımda.fotografColumn);
+                return this.IsNull(this.tableHakkimda_tbl.fotografColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetfotografNull() {
-                this[this.tablehakkımda.fotografColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsExpr2Null() {
-                return this.IsNull(this.tablehakkımda.Expr2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetExpr2Null() {
-                this[this.tablehakkımda.Expr2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsExpr3Null() {
-                return this.IsNull(this.tablehakkımda.Expr3Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetExpr3Null() {
-                this[this.tablehakkımda.Expr3Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsExpr4Null() {
-                return this.IsNull(this.tablehakkımda.Expr4Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetExpr4Null() {
-                this[this.tablehakkımda.Expr4Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsExpr5Null() {
-                return this.IsNull(this.tablehakkımda.Expr5Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetExpr5Null() {
-                this[this.tablehakkımda.Expr5Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsExpr6Null() {
-                return this.IsNull(this.tablehakkımda.Expr6Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetExpr6Null() {
-                this[this.tablehakkımda.Expr6Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsExpr7Null() {
-                return this.IsNull(this.tablehakkımda.Expr7Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetExpr7Null() {
-                this[this.tablehakkımda.Expr7Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsExpr8Null() {
-                return this.IsNull(this.tablehakkımda.Expr8Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetExpr8Null() {
-                this[this.tablehakkımda.Expr8Column] = global::System.Convert.DBNull;
+                this[this.tableHakkimda_tbl.fotografColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class deneyimRow : global::System.Data.DataRow {
+        public partial class Deneyim_tblRow : global::System.Data.DataRow {
             
-            private deneyimDataTable tabledeneyim;
+            private Deneyim_tblDataTable tableDeneyim_tbl;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal deneyimRow(global::System.Data.DataRowBuilder rb) : 
+            internal Deneyim_tblRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabledeneyim = ((deneyimDataTable)(this.Table));
+                this.tableDeneyim_tbl = ((Deneyim_tblDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public short ID {
                 get {
-                    try {
-                        return ((short)(this[this.tabledeneyim.IDColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'deneyim\' tablosundaki \'ID\' sütunun değeri DBNull.", e);
-                    }
+                    return ((short)(this[this.tableDeneyim_tbl.IDColumn]));
                 }
                 set {
-                    this[this.tabledeneyim.IDColumn] = value;
+                    this[this.tableDeneyim_tbl.IDColumn] = value;
                 }
             }
             
@@ -2515,14 +2189,14 @@ namespace WebApplication1 {
             public string BASLIK {
                 get {
                     try {
-                        return ((string)(this[this.tabledeneyim.BASLIKColumn]));
+                        return ((string)(this[this.tableDeneyim_tbl.BASLIKColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'deneyim\' tablosundaki \'BASLIK\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Deneyim_tbl\' tablosundaki \'BASLIK\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabledeneyim.BASLIKColumn] = value;
+                    this[this.tableDeneyim_tbl.BASLIKColumn] = value;
                 }
             }
             
@@ -2531,14 +2205,14 @@ namespace WebApplication1 {
             public string ALTBASLIK {
                 get {
                     try {
-                        return ((string)(this[this.tabledeneyim.ALTBASLIKColumn]));
+                        return ((string)(this[this.tableDeneyim_tbl.ALTBASLIKColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'deneyim\' tablosundaki \'ALTBASLIK\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Deneyim_tbl\' tablosundaki \'ALTBASLIK\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabledeneyim.ALTBASLIKColumn] = value;
+                    this[this.tableDeneyim_tbl.ALTBASLIKColumn] = value;
                 }
             }
             
@@ -2547,14 +2221,14 @@ namespace WebApplication1 {
             public string ACIKLAMA {
                 get {
                     try {
-                        return ((string)(this[this.tabledeneyim.ACIKLAMAColumn]));
+                        return ((string)(this[this.tableDeneyim_tbl.ACIKLAMAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'deneyim\' tablosundaki \'ACIKLAMA\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Deneyim_tbl\' tablosundaki \'ACIKLAMA\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabledeneyim.ACIKLAMAColumn] = value;
+                    this[this.tableDeneyim_tbl.ACIKLAMAColumn] = value;
                 }
             }
             
@@ -2563,105 +2237,88 @@ namespace WebApplication1 {
             public string TARIH {
                 get {
                     try {
-                        return ((string)(this[this.tabledeneyim.TARIHColumn]));
+                        return ((string)(this[this.tableDeneyim_tbl.TARIHColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'deneyim\' tablosundaki \'TARIH\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Deneyim_tbl\' tablosundaki \'TARIH\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabledeneyim.TARIHColumn] = value;
+                    this[this.tableDeneyim_tbl.TARIHColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsIDNull() {
-                return this.IsNull(this.tabledeneyim.IDColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetIDNull() {
-                this[this.tabledeneyim.IDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsBASLIKNull() {
-                return this.IsNull(this.tabledeneyim.BASLIKColumn);
+                return this.IsNull(this.tableDeneyim_tbl.BASLIKColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetBASLIKNull() {
-                this[this.tabledeneyim.BASLIKColumn] = global::System.Convert.DBNull;
+                this[this.tableDeneyim_tbl.BASLIKColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsALTBASLIKNull() {
-                return this.IsNull(this.tabledeneyim.ALTBASLIKColumn);
+                return this.IsNull(this.tableDeneyim_tbl.ALTBASLIKColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetALTBASLIKNull() {
-                this[this.tabledeneyim.ALTBASLIKColumn] = global::System.Convert.DBNull;
+                this[this.tableDeneyim_tbl.ALTBASLIKColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsACIKLAMANull() {
-                return this.IsNull(this.tabledeneyim.ACIKLAMAColumn);
+                return this.IsNull(this.tableDeneyim_tbl.ACIKLAMAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetACIKLAMANull() {
-                this[this.tabledeneyim.ACIKLAMAColumn] = global::System.Convert.DBNull;
+                this[this.tableDeneyim_tbl.ACIKLAMAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsTARIHNull() {
-                return this.IsNull(this.tabledeneyim.TARIHColumn);
+                return this.IsNull(this.tableDeneyim_tbl.TARIHColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetTARIHNull() {
-                this[this.tabledeneyim.TARIHColumn] = global::System.Convert.DBNull;
+                this[this.tableDeneyim_tbl.TARIHColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class egitimRow : global::System.Data.DataRow {
+        public partial class Egitim_tblRow : global::System.Data.DataRow {
             
-            private egitimDataTable tableegitim;
+            private Egitim_tblDataTable tableEgitim_tbl;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal egitimRow(global::System.Data.DataRowBuilder rb) : 
+            internal Egitim_tblRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableegitim = ((egitimDataTable)(this.Table));
+                this.tableEgitim_tbl = ((Egitim_tblDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public short ID {
                 get {
-                    try {
-                        return ((short)(this[this.tableegitim.IDColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'egitim\' tablosundaki \'ID\' sütunun değeri DBNull.", e);
-                    }
+                    return ((short)(this[this.tableEgitim_tbl.IDColumn]));
                 }
                 set {
-                    this[this.tableegitim.IDColumn] = value;
+                    this[this.tableEgitim_tbl.IDColumn] = value;
                 }
             }
             
@@ -2670,14 +2327,14 @@ namespace WebApplication1 {
             public string BASLIK {
                 get {
                     try {
-                        return ((string)(this[this.tableegitim.BASLIKColumn]));
+                        return ((string)(this[this.tableEgitim_tbl.BASLIKColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'egitim\' tablosundaki \'BASLIK\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Egitim_tbl\' tablosundaki \'BASLIK\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableegitim.BASLIKColumn] = value;
+                    this[this.tableEgitim_tbl.BASLIKColumn] = value;
                 }
             }
             
@@ -2686,14 +2343,14 @@ namespace WebApplication1 {
             public string ALTBASLIK {
                 get {
                     try {
-                        return ((string)(this[this.tableegitim.ALTBASLIKColumn]));
+                        return ((string)(this[this.tableEgitim_tbl.ALTBASLIKColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'egitim\' tablosundaki \'ALTBASLIK\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Egitim_tbl\' tablosundaki \'ALTBASLIK\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableegitim.ALTBASLIKColumn] = value;
+                    this[this.tableEgitim_tbl.ALTBASLIKColumn] = value;
                 }
             }
             
@@ -2702,14 +2359,14 @@ namespace WebApplication1 {
             public string ACIKLAMA {
                 get {
                     try {
-                        return ((string)(this[this.tableegitim.ACIKLAMAColumn]));
+                        return ((string)(this[this.tableEgitim_tbl.ACIKLAMAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'egitim\' tablosundaki \'ACIKLAMA\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Egitim_tbl\' tablosundaki \'ACIKLAMA\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableegitim.ACIKLAMAColumn] = value;
+                    this[this.tableEgitim_tbl.ACIKLAMAColumn] = value;
                 }
             }
             
@@ -2718,14 +2375,14 @@ namespace WebApplication1 {
             public string GNO {
                 get {
                     try {
-                        return ((string)(this[this.tableegitim.GNOColumn]));
+                        return ((string)(this[this.tableEgitim_tbl.GNOColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'egitim\' tablosundaki \'GNO\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Egitim_tbl\' tablosundaki \'GNO\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableegitim.GNOColumn] = value;
+                    this[this.tableEgitim_tbl.GNOColumn] = value;
                 }
             }
             
@@ -2734,102 +2391,90 @@ namespace WebApplication1 {
             public string TARİH {
                 get {
                     try {
-                        return ((string)(this[this.tableegitim.TARİHColumn]));
+                        return ((string)(this[this.tableEgitim_tbl.TARİHColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'egitim\' tablosundaki \'TARİH\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Egitim_tbl\' tablosundaki \'TARİH\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableegitim.TARİHColumn] = value;
+                    this[this.tableEgitim_tbl.TARİHColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsIDNull() {
-                return this.IsNull(this.tableegitim.IDColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetIDNull() {
-                this[this.tableegitim.IDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsBASLIKNull() {
-                return this.IsNull(this.tableegitim.BASLIKColumn);
+                return this.IsNull(this.tableEgitim_tbl.BASLIKColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetBASLIKNull() {
-                this[this.tableegitim.BASLIKColumn] = global::System.Convert.DBNull;
+                this[this.tableEgitim_tbl.BASLIKColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsALTBASLIKNull() {
-                return this.IsNull(this.tableegitim.ALTBASLIKColumn);
+                return this.IsNull(this.tableEgitim_tbl.ALTBASLIKColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetALTBASLIKNull() {
-                this[this.tableegitim.ALTBASLIKColumn] = global::System.Convert.DBNull;
+                this[this.tableEgitim_tbl.ALTBASLIKColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsACIKLAMANull() {
-                return this.IsNull(this.tableegitim.ACIKLAMAColumn);
+                return this.IsNull(this.tableEgitim_tbl.ACIKLAMAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetACIKLAMANull() {
-                this[this.tableegitim.ACIKLAMAColumn] = global::System.Convert.DBNull;
+                this[this.tableEgitim_tbl.ACIKLAMAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsGNONull() {
-                return this.IsNull(this.tableegitim.GNOColumn);
+                return this.IsNull(this.tableEgitim_tbl.GNOColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetGNONull() {
-                this[this.tableegitim.GNOColumn] = global::System.Convert.DBNull;
+                this[this.tableEgitim_tbl.GNOColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsTARİHNull() {
-                return this.IsNull(this.tableegitim.TARİHColumn);
+                return this.IsNull(this.tableEgitim_tbl.TARİHColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetTARİHNull() {
-                this[this.tableegitim.TARİHColumn] = global::System.Convert.DBNull;
+                this[this.tableEgitim_tbl.TARİHColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class hobilerRow : global::System.Data.DataRow {
+        public partial class Hobiler_tblRow : global::System.Data.DataRow {
             
-            private hobilerDataTable tablehobiler;
+            private Hobiler_tblDataTable tableHobiler_tbl;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal hobilerRow(global::System.Data.DataRowBuilder rb) : 
+            internal Hobiler_tblRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablehobiler = ((hobilerDataTable)(this.Table));
+                this.tableHobiler_tbl = ((Hobiler_tblDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2837,14 +2482,14 @@ namespace WebApplication1 {
             public short ID {
                 get {
                     try {
-                        return ((short)(this[this.tablehobiler.IDColumn]));
+                        return ((short)(this[this.tableHobiler_tbl.IDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hobiler\' tablosundaki \'ID\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Hobiler_tbl\' tablosundaki \'ID\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablehobiler.IDColumn] = value;
+                    this[this.tableHobiler_tbl.IDColumn] = value;
                 }
             }
             
@@ -2853,64 +2498,64 @@ namespace WebApplication1 {
             public string hobi {
                 get {
                     try {
-                        return ((string)(this[this.tablehobiler.hobiColumn]));
+                        return ((string)(this[this.tableHobiler_tbl.hobiColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'hobiler\' tablosundaki \'hobi\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Hobiler_tbl\' tablosundaki \'hobi\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablehobiler.hobiColumn] = value;
+                    this[this.tableHobiler_tbl.hobiColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsIDNull() {
-                return this.IsNull(this.tablehobiler.IDColumn);
+                return this.IsNull(this.tableHobiler_tbl.IDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetIDNull() {
-                this[this.tablehobiler.IDColumn] = global::System.Convert.DBNull;
+                this[this.tableHobiler_tbl.IDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IshobiNull() {
-                return this.IsNull(this.tablehobiler.hobiColumn);
+                return this.IsNull(this.tableHobiler_tbl.hobiColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SethobiNull() {
-                this[this.tablehobiler.hobiColumn] = global::System.Convert.DBNull;
+                this[this.tableHobiler_tbl.hobiColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class sertifikaRow : global::System.Data.DataRow {
+        public partial class Sertifika_tblRow : global::System.Data.DataRow {
             
-            private sertifikaDataTable tablesertifika;
+            private Sertifika_tblDataTable tableSertifika_tbl;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal sertifikaRow(global::System.Data.DataRowBuilder rb) : 
+            internal Sertifika_tblRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablesertifika = ((sertifikaDataTable)(this.Table));
+                this.tableSertifika_tbl = ((Sertifika_tblDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public short ID {
                 get {
-                    return ((short)(this[this.tablesertifika.IDColumn]));
+                    return ((short)(this[this.tableSertifika_tbl.IDColumn]));
                 }
                 set {
-                    this[this.tablesertifika.IDColumn] = value;
+                    this[this.tableSertifika_tbl.IDColumn] = value;
                 }
             }
             
@@ -2919,27 +2564,27 @@ namespace WebApplication1 {
             public string setifika {
                 get {
                     try {
-                        return ((string)(this[this.tablesertifika.setifikaColumn]));
+                        return ((string)(this[this.tableSertifika_tbl.setifikaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'sertifika\' tablosundaki \'setifika\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Sertifika_tbl\' tablosundaki \'setifika\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablesertifika.setifikaColumn] = value;
+                    this[this.tableSertifika_tbl.setifikaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IssetifikaNull() {
-                return this.IsNull(this.tablesertifika.setifikaColumn);
+                return this.IsNull(this.tableSertifika_tbl.setifikaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetsetifikaNull() {
-                this[this.tablesertifika.setifikaColumn] = global::System.Convert.DBNull;
+                this[this.tableSertifika_tbl.setifikaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2947,22 +2592,22 @@ namespace WebApplication1 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class hakkımdaRowChangeEvent : global::System.EventArgs {
+        public class Hakkimda_tblRowChangeEvent : global::System.EventArgs {
             
-            private hakkımdaRow eventRow;
+            private Hakkimda_tblRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hakkımdaRowChangeEvent(hakkımdaRow row, global::System.Data.DataRowAction action) {
+            public Hakkimda_tblRowChangeEvent(Hakkimda_tblRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hakkımdaRow Row {
+            public Hakkimda_tblRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -2981,22 +2626,22 @@ namespace WebApplication1 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class deneyimRowChangeEvent : global::System.EventArgs {
+        public class Deneyim_tblRowChangeEvent : global::System.EventArgs {
             
-            private deneyimRow eventRow;
+            private Deneyim_tblRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public deneyimRowChangeEvent(deneyimRow row, global::System.Data.DataRowAction action) {
+            public Deneyim_tblRowChangeEvent(Deneyim_tblRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public deneyimRow Row {
+            public Deneyim_tblRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3015,22 +2660,22 @@ namespace WebApplication1 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class egitimRowChangeEvent : global::System.EventArgs {
+        public class Egitim_tblRowChangeEvent : global::System.EventArgs {
             
-            private egitimRow eventRow;
+            private Egitim_tblRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public egitimRowChangeEvent(egitimRow row, global::System.Data.DataRowAction action) {
+            public Egitim_tblRowChangeEvent(Egitim_tblRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public egitimRow Row {
+            public Egitim_tblRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3049,22 +2694,22 @@ namespace WebApplication1 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class hobilerRowChangeEvent : global::System.EventArgs {
+        public class Hobiler_tblRowChangeEvent : global::System.EventArgs {
             
-            private hobilerRow eventRow;
+            private Hobiler_tblRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hobilerRowChangeEvent(hobilerRow row, global::System.Data.DataRowAction action) {
+            public Hobiler_tblRowChangeEvent(Hobiler_tblRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hobilerRow Row {
+            public Hobiler_tblRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3083,22 +2728,22 @@ namespace WebApplication1 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class sertifikaRowChangeEvent : global::System.EventArgs {
+        public class Sertifika_tblRowChangeEvent : global::System.EventArgs {
             
-            private sertifikaRow eventRow;
+            private Sertifika_tblRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sertifikaRowChangeEvent(sertifikaRow row, global::System.Data.DataRowAction action) {
+            public Sertifika_tblRowChangeEvent(Sertifika_tblRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sertifikaRow Row {
+            public Sertifika_tblRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3126,7 +2771,7 @@ namespace WebApplication1.DataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class hakkımdaTableAdapter : global::System.ComponentModel.Component {
+    public partial class Hakkimda_tblTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -3140,7 +2785,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public hakkımdaTableAdapter() {
+        public Hakkimda_tblTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -3237,7 +2882,7 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "hakkımda";
+            tableMapping.DataSetTable = "Hakkimda_tbl";
             tableMapping.ColumnMappings.Add("ID", "ID");
             tableMapping.ColumnMappings.Add("AD", "AD");
             tableMapping.ColumnMappings.Add("SOYAD", "SOYAD");
@@ -3246,18 +2891,12 @@ namespace WebApplication1.DataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("TELEFON", "TELEFON");
             tableMapping.ColumnMappings.Add("ACIKLAMA", "ACIKLAMA");
             tableMapping.ColumnMappings.Add("fotograf", "fotograf");
-            tableMapping.ColumnMappings.Add("Expr1", "Expr1");
-            tableMapping.ColumnMappings.Add("Expr2", "Expr2");
-            tableMapping.ColumnMappings.Add("Expr3", "Expr3");
-            tableMapping.ColumnMappings.Add("Expr4", "Expr4");
-            tableMapping.ColumnMappings.Add("Expr5", "Expr5");
-            tableMapping.ColumnMappings.Add("Expr6", "Expr6");
-            tableMapping.ColumnMappings.Add("Expr7", "Expr7");
-            tableMapping.ColumnMappings.Add("Expr8", "Expr8");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [hakkımda] ([AD], [SOYAD], [ADRES], [MAIL], [TELEFON], [ACIKLAMA], [fotograf], [AD], [SOYAD], [ADRES], [MAIL], [TELEFON], [ACIKLAMA], [fotograf]) VALUES (@AD, @SOYAD, @ADRES, @MAIL, @TELEFON, @ACIKLAMA, @fotograf, @Expr2, @Expr3, @Expr4, @Expr5, @Expr6, @Expr7, @Expr8)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [Hakkimda_tbl] ([AD], [SOYAD], [ADRES], [MAIL], [TELEFON], [ACIKLAMA]" +
+                ", [fotograf]) VALUES (@AD, @SOYAD, @ADRES, @MAIL, @TELEFON, @ACIKLAMA, @fotograf" +
+                ")";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SOYAD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SOYAD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3266,20 +2905,14 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TELEFON", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ACIKLAMA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ACIKLAMA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fotograf", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fotograf", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Expr2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Expr2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Expr3", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Expr3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Expr4", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Expr4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Expr5", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Expr5", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Expr6", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Expr6", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Expr7", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Expr7", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Expr8", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Expr8", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["cv_blogConnectionString"].ConnectionString;
+            this._connection.ConnectionString = "Data Source=.;Initial Catalog=cv_blog;Integrated Security=True;Encrypt=True;Trust" +
+                "ServerCertificate=True";
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3288,14 +2921,12 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT hakkımda.*, ID AS Expr1, AD AS Expr2, SOYAD AS Expr3, ADRES AS Expr4, MAIL" +
-                " AS Expr5, TELEFON AS Expr6, ACIKLAMA AS Expr7, fotograf AS Expr8\r\nFROM     hakk" +
-                "ımda";
+            this._commandCollection[0].CommandText = "select * from Hakkimda_tbl";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "UPDATE hakkımda set AD=@AD , SOYAD=@SOYAD ,  ADRES=@ADRES , MAIL=@MAIL , TELEFON=" +
-                "@TELEFON , ACIKLAMA=@ACIKLAMA , fotograf=@fotograf";
+            this._commandCollection[1].CommandText = "UPDATE Hakkimda_tbl\r\nSET          AD = @AD, SOYAD = @SOYAD, ADRES = @ADRES, MAIL " +
+                "= @MAIL, TELEFON = @TELEFON, ACIKLAMA = @ACIKLAMA, fotograf = @fotograf";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AD", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "AD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SOYAD", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "SOYAD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3310,7 +2941,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet1.hakkımdaDataTable dataTable) {
+        public virtual int Fill(DataSet1.Hakkimda_tblDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3323,9 +2954,9 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet1.hakkımdaDataTable hakkimdalistele() {
+        public virtual DataSet1.Hakkimda_tblDataTable HakkimdaListele() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet1.hakkımdaDataTable dataTable = new DataSet1.hakkımdaDataTable();
+            DataSet1.Hakkimda_tblDataTable dataTable = new DataSet1.Hakkimda_tblDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3333,7 +2964,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet1.hakkımdaDataTable dataTable) {
+        public virtual int Update(DataSet1.Hakkimda_tblDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -3341,7 +2972,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(DataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "hakkımda");
+            return this.Adapter.Update(dataSet, "Hakkimda_tbl");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3363,7 +2994,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string AD, string SOYAD, string ADRES, string MAIL, string TELEFON, string ACIKLAMA, string fotograf, string Expr2, string Expr3, string Expr4, string Expr5, string Expr6, string Expr7, string Expr8) {
+        public virtual int Insert(string AD, string SOYAD, string ADRES, string MAIL, string TELEFON, string ACIKLAMA, string fotograf) {
             if ((AD == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -3406,48 +3037,6 @@ namespace WebApplication1.DataSet1TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = ((string)(fotograf));
             }
-            if ((Expr2 == null)) {
-                throw new global::System.ArgumentNullException("Expr2");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(Expr2));
-            }
-            if ((Expr3 == null)) {
-                throw new global::System.ArgumentNullException("Expr3");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(Expr3));
-            }
-            if ((Expr4 == null)) {
-                throw new global::System.ArgumentNullException("Expr4");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(Expr4));
-            }
-            if ((Expr5 == null)) {
-                throw new global::System.ArgumentNullException("Expr5");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(Expr5));
-            }
-            if ((Expr6 == null)) {
-                throw new global::System.ArgumentNullException("Expr6");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(Expr6));
-            }
-            if ((Expr7 == null)) {
-                throw new global::System.ArgumentNullException("Expr7");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(Expr7));
-            }
-            if ((Expr8 == null)) {
-                throw new global::System.ArgumentNullException("Expr8");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(Expr8));
-            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -3468,7 +3057,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int hakkimda_guncelle(string AD, string SOYAD, string ADRES, string MAIL, string TELEFON, string ACIKLAMA, string fotograf) {
+        public virtual int Hakkimda_güncelle(string AD, string SOYAD, string ADRES, string MAIL, string TELEFON, string ACIKLAMA, string fotograf) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
             if ((AD == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
@@ -3539,7 +3128,7 @@ namespace WebApplication1.DataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class deneyimTableAdapter : global::System.ComponentModel.Component {
+    public partial class Deneyim_tblTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -3553,7 +3142,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public deneyimTableAdapter() {
+        public Deneyim_tblTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -3650,7 +3239,7 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "deneyim";
+            tableMapping.DataSetTable = "Deneyim_tbl";
             tableMapping.ColumnMappings.Add("ID", "ID");
             tableMapping.ColumnMappings.Add("BASLIK", "BASLIK");
             tableMapping.ColumnMappings.Add("ALTBASLIK", "ALTBASLIK");
@@ -3659,10 +3248,9 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [deneyim] ([ID], [BASLIK], [ALTBASLIK], [ACIKLAMA], [TARIH]) VALUES (" +
-                "@ID, @BASLIK, @ALTBASLIK, @ACIKLAMA, @TARIH)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [Deneyim_tbl] ([BASLIK], [ALTBASLIK], [ACIKLAMA], [TARIH]) VALUES (@B" +
+                "ASLIK, @ALTBASLIK, @ACIKLAMA, @TARIH)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BASLIK", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BASLIK", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ALTBASLIK", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ALTBASLIK", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ACIKLAMA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ACIKLAMA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3683,7 +3271,7 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, BASLIK, ALTBASLIK, ACIKLAMA, TARIH\r\nFROM     deneyim";
+            this._commandCollection[0].CommandText = "Select * from Deneyim_tbl\r\n";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -3691,7 +3279,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet1.deneyimDataTable dataTable) {
+        public virtual int Fill(DataSet1.Deneyim_tblDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3704,9 +3292,9 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet1.deneyimDataTable deneyimlistele() {
+        public virtual DataSet1.Deneyim_tblDataTable DeneyimListele() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet1.deneyimDataTable dataTable = new DataSet1.deneyimDataTable();
+            DataSet1.Deneyim_tblDataTable dataTable = new DataSet1.Deneyim_tblDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3714,7 +3302,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet1.deneyimDataTable dataTable) {
+        public virtual int Update(DataSet1.Deneyim_tblDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -3722,7 +3310,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(DataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "deneyim");
+            return this.Adapter.Update(dataSet, "Deneyim_tbl");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3744,36 +3332,30 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<short> ID, string BASLIK, string ALTBASLIK, string ACIKLAMA, string TARIH) {
-            if ((ID.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((short)(ID.Value));
-            }
-            else {
+        public virtual int Insert(string BASLIK, string ALTBASLIK, string ACIKLAMA, string TARIH) {
+            if ((BASLIK == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((BASLIK == null)) {
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(BASLIK));
+            }
+            if ((ALTBASLIK == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(BASLIK));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(ALTBASLIK));
             }
-            if ((ALTBASLIK == null)) {
+            if ((ACIKLAMA == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(ALTBASLIK));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(ACIKLAMA));
             }
-            if ((ACIKLAMA == null)) {
+            if ((TARIH == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(ACIKLAMA));
-            }
-            if ((TARIH == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(TARIH));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(TARIH));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -3801,7 +3383,7 @@ namespace WebApplication1.DataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class egitimTableAdapter : global::System.ComponentModel.Component {
+    public partial class Egitim_tblTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -3815,7 +3397,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public egitimTableAdapter() {
+        public Egitim_tblTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -3912,7 +3494,7 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "egitim";
+            tableMapping.DataSetTable = "Egitim_tbl";
             tableMapping.ColumnMappings.Add("ID", "ID");
             tableMapping.ColumnMappings.Add("BASLIK", "BASLIK");
             tableMapping.ColumnMappings.Add("ALTBASLIK", "ALTBASLIK");
@@ -3922,10 +3504,9 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [egitim] ([ID], [BASLIK], [ALTBASLIK], [ACIKLAMA], [GNO], [TARİH]) VA" +
-                "LUES (@ID, @BASLIK, @ALTBASLIK, @ACIKLAMA, @GNO, @TARİH)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [Egitim_tbl] ([BASLIK], [ALTBASLIK], [ACIKLAMA], [GNO], [TARİH]) VALU" +
+                "ES (@BASLIK, @ALTBASLIK, @ACIKLAMA, @GNO, @TARİH)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BASLIK", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BASLIK", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ALTBASLIK", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ALTBASLIK", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ACIKLAMA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ACIKLAMA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3947,7 +3528,7 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, BASLIK, ALTBASLIK, ACIKLAMA, GNO, TARİH\r\nFROM     egitim";
+            this._commandCollection[0].CommandText = "select * from Egitim_tbl\r\n";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -3955,7 +3536,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill_egitim(DataSet1.egitimDataTable dataTable) {
+        public virtual int Fill(DataSet1.Egitim_tblDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3968,9 +3549,9 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet1.egitimDataTable egitimListele() {
+        public virtual DataSet1.Egitim_tblDataTable EgitimListele() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet1.egitimDataTable dataTable = new DataSet1.egitimDataTable();
+            DataSet1.Egitim_tblDataTable dataTable = new DataSet1.Egitim_tblDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3978,7 +3559,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet1.egitimDataTable dataTable) {
+        public virtual int Update(DataSet1.Egitim_tblDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -3986,7 +3567,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(DataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "egitim");
+            return this.Adapter.Update(dataSet, "Egitim_tbl");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4008,42 +3589,36 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<short> ID, string BASLIK, string ALTBASLIK, string ACIKLAMA, string GNO, string TARİH) {
-            if ((ID.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((short)(ID.Value));
-            }
-            else {
+        public virtual int Insert(string BASLIK, string ALTBASLIK, string ACIKLAMA, string GNO, string TARİH) {
+            if ((BASLIK == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((BASLIK == null)) {
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(BASLIK));
+            }
+            if ((ALTBASLIK == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(BASLIK));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(ALTBASLIK));
             }
-            if ((ALTBASLIK == null)) {
+            if ((ACIKLAMA == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(ALTBASLIK));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(ACIKLAMA));
             }
-            if ((ACIKLAMA == null)) {
+            if ((GNO == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(ACIKLAMA));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(GNO));
             }
-            if ((GNO == null)) {
+            if ((TARİH == null)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(GNO));
-            }
-            if ((TARİH == null)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(TARİH));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(TARİH));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -4071,7 +3646,7 @@ namespace WebApplication1.DataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class hobilerTableAdapter : global::System.ComponentModel.Component {
+    public partial class Hobiler_tblTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -4085,7 +3660,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public hobilerTableAdapter() {
+        public Hobiler_tblTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -4182,13 +3757,13 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "hobiler";
+            tableMapping.DataSetTable = "Hobiler_tbl";
             tableMapping.ColumnMappings.Add("ID", "ID");
             tableMapping.ColumnMappings.Add("hobi", "hobi");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [hobiler] ([ID], [hobi]) VALUES (@ID, @hobi)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [Hobiler_tbl] ([ID], [hobi]) VALUES (@ID, @hobi)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@hobi", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "hobi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -4208,7 +3783,7 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "select * from hobiler\r\n";
+            this._commandCollection[0].CommandText = "select * from Hobiler_tbl\r\n";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4216,7 +3791,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill_hobiler(DataSet1.hobilerDataTable dataTable) {
+        public virtual int Fill(DataSet1.Hobiler_tblDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4229,9 +3804,9 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet1.hobilerDataTable hobilerListele() {
+        public virtual DataSet1.Hobiler_tblDataTable HobiListele() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet1.hobilerDataTable dataTable = new DataSet1.hobilerDataTable();
+            DataSet1.Hobiler_tblDataTable dataTable = new DataSet1.Hobiler_tblDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4239,7 +3814,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet1.hobilerDataTable dataTable) {
+        public virtual int Update(DataSet1.Hobiler_tblDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -4247,7 +3822,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(DataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "hobiler");
+            return this.Adapter.Update(dataSet, "Hobiler_tbl");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4308,7 +3883,7 @@ namespace WebApplication1.DataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class sertifikaTableAdapter : global::System.ComponentModel.Component {
+    public partial class Sertifika_tblTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -4322,7 +3897,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public sertifikaTableAdapter() {
+        public Sertifika_tblTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -4419,13 +3994,13 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "sertifika";
+            tableMapping.DataSetTable = "Sertifika_tbl";
             tableMapping.ColumnMappings.Add("ID", "ID");
             tableMapping.ColumnMappings.Add("setifika", "setifika");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [sertifika] ([setifika]) VALUES (@setifika)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [Sertifika_tbl] ([setifika]) VALUES (@setifika)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@setifika", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "setifika", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -4444,7 +4019,7 @@ namespace WebApplication1.DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "select * from sertifika\r\n";
+            this._commandCollection[0].CommandText = "Select *from Sertifika_tbl\r\n";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4452,7 +4027,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill_sertifika(DataSet1.sertifikaDataTable dataTable) {
+        public virtual int Fill(DataSet1.Sertifika_tblDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4465,9 +4040,9 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet1.sertifikaDataTable sertifikalistele() {
+        public virtual DataSet1.Sertifika_tblDataTable SertifikaListele() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet1.sertifikaDataTable dataTable = new DataSet1.sertifikaDataTable();
+            DataSet1.Sertifika_tblDataTable dataTable = new DataSet1.Sertifika_tblDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4475,7 +4050,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet1.sertifikaDataTable dataTable) {
+        public virtual int Update(DataSet1.Sertifika_tblDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -4483,7 +4058,7 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(DataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "sertifika");
+            return this.Adapter.Update(dataSet, "Sertifika_tbl");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4541,15 +4116,15 @@ namespace WebApplication1.DataSet1TableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private hakkımdaTableAdapter _hakkımdaTableAdapter;
+        private Hakkimda_tblTableAdapter _hakkimda_tblTableAdapter;
         
-        private deneyimTableAdapter _deneyimTableAdapter;
+        private Deneyim_tblTableAdapter _deneyim_tblTableAdapter;
         
-        private egitimTableAdapter _egitimTableAdapter;
+        private Egitim_tblTableAdapter _egitim_tblTableAdapter;
         
-        private hobilerTableAdapter _hobilerTableAdapter;
+        private Hobiler_tblTableAdapter _hobiler_tblTableAdapter;
         
-        private sertifikaTableAdapter _sertifikaTableAdapter;
+        private Sertifika_tblTableAdapter _sertifika_tblTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -4571,12 +4146,12 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public hakkımdaTableAdapter hakkımdaTableAdapter {
+        public Hakkimda_tblTableAdapter Hakkimda_tblTableAdapter {
             get {
-                return this._hakkımdaTableAdapter;
+                return this._hakkimda_tblTableAdapter;
             }
             set {
-                this._hakkımdaTableAdapter = value;
+                this._hakkimda_tblTableAdapter = value;
             }
         }
         
@@ -4585,12 +4160,12 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public deneyimTableAdapter deneyimTableAdapter {
+        public Deneyim_tblTableAdapter Deneyim_tblTableAdapter {
             get {
-                return this._deneyimTableAdapter;
+                return this._deneyim_tblTableAdapter;
             }
             set {
-                this._deneyimTableAdapter = value;
+                this._deneyim_tblTableAdapter = value;
             }
         }
         
@@ -4599,12 +4174,12 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public egitimTableAdapter egitimTableAdapter {
+        public Egitim_tblTableAdapter Egitim_tblTableAdapter {
             get {
-                return this._egitimTableAdapter;
+                return this._egitim_tblTableAdapter;
             }
             set {
-                this._egitimTableAdapter = value;
+                this._egitim_tblTableAdapter = value;
             }
         }
         
@@ -4613,12 +4188,12 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public hobilerTableAdapter hobilerTableAdapter {
+        public Hobiler_tblTableAdapter Hobiler_tblTableAdapter {
             get {
-                return this._hobilerTableAdapter;
+                return this._hobiler_tblTableAdapter;
             }
             set {
-                this._hobilerTableAdapter = value;
+                this._hobiler_tblTableAdapter = value;
             }
         }
         
@@ -4627,12 +4202,12 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public sertifikaTableAdapter sertifikaTableAdapter {
+        public Sertifika_tblTableAdapter Sertifika_tblTableAdapter {
             get {
-                return this._sertifikaTableAdapter;
+                return this._sertifika_tblTableAdapter;
             }
             set {
-                this._sertifikaTableAdapter = value;
+                this._sertifika_tblTableAdapter = value;
             }
         }
         
@@ -4655,25 +4230,25 @@ namespace WebApplication1.DataSet1TableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._hakkımdaTableAdapter != null) 
-                            && (this._hakkımdaTableAdapter.Connection != null))) {
-                    return this._hakkımdaTableAdapter.Connection;
+                if (((this._hakkimda_tblTableAdapter != null) 
+                            && (this._hakkimda_tblTableAdapter.Connection != null))) {
+                    return this._hakkimda_tblTableAdapter.Connection;
                 }
-                if (((this._deneyimTableAdapter != null) 
-                            && (this._deneyimTableAdapter.Connection != null))) {
-                    return this._deneyimTableAdapter.Connection;
+                if (((this._deneyim_tblTableAdapter != null) 
+                            && (this._deneyim_tblTableAdapter.Connection != null))) {
+                    return this._deneyim_tblTableAdapter.Connection;
                 }
-                if (((this._egitimTableAdapter != null) 
-                            && (this._egitimTableAdapter.Connection != null))) {
-                    return this._egitimTableAdapter.Connection;
+                if (((this._egitim_tblTableAdapter != null) 
+                            && (this._egitim_tblTableAdapter.Connection != null))) {
+                    return this._egitim_tblTableAdapter.Connection;
                 }
-                if (((this._hobilerTableAdapter != null) 
-                            && (this._hobilerTableAdapter.Connection != null))) {
-                    return this._hobilerTableAdapter.Connection;
+                if (((this._hobiler_tblTableAdapter != null) 
+                            && (this._hobiler_tblTableAdapter.Connection != null))) {
+                    return this._hobiler_tblTableAdapter.Connection;
                 }
-                if (((this._sertifikaTableAdapter != null) 
-                            && (this._sertifikaTableAdapter.Connection != null))) {
-                    return this._sertifikaTableAdapter.Connection;
+                if (((this._sertifika_tblTableAdapter != null) 
+                            && (this._sertifika_tblTableAdapter.Connection != null))) {
+                    return this._sertifika_tblTableAdapter.Connection;
                 }
                 return null;
             }
@@ -4688,19 +4263,19 @@ namespace WebApplication1.DataSet1TableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._hakkımdaTableAdapter != null)) {
+                if ((this._hakkimda_tblTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._deneyimTableAdapter != null)) {
+                if ((this._deneyim_tblTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._egitimTableAdapter != null)) {
+                if ((this._egitim_tblTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._hobilerTableAdapter != null)) {
+                if ((this._hobiler_tblTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._sertifikaTableAdapter != null)) {
+                if ((this._sertifika_tblTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -4714,48 +4289,48 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateUpdatedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._hakkımdaTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.hakkımda.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._hakkimda_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Hakkimda_tbl.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._hakkımdaTableAdapter.Update(updatedRows));
+                    result = (result + this._hakkimda_tblTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._deneyimTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.deneyim.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._deneyim_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Deneyim_tbl.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._deneyimTableAdapter.Update(updatedRows));
+                    result = (result + this._deneyim_tblTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._egitimTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.egitim.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._egitim_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Egitim_tbl.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._egitimTableAdapter.Update(updatedRows));
+                    result = (result + this._egitim_tblTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._hobilerTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.hobiler.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._hobiler_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Hobiler_tbl.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._hobilerTableAdapter.Update(updatedRows));
+                    result = (result + this._hobiler_tblTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._sertifikaTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.sertifika.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._sertifika_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Sertifika_tbl.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._sertifikaTableAdapter.Update(updatedRows));
+                    result = (result + this._sertifika_tblTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -4769,43 +4344,43 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateInsertedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._hakkımdaTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.hakkımda.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._hakkimda_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Hakkimda_tbl.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._hakkımdaTableAdapter.Update(addedRows));
+                    result = (result + this._hakkimda_tblTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._deneyimTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.deneyim.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._deneyim_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Deneyim_tbl.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._deneyimTableAdapter.Update(addedRows));
+                    result = (result + this._deneyim_tblTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._egitimTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.egitim.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._egitim_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Egitim_tbl.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._egitimTableAdapter.Update(addedRows));
+                    result = (result + this._egitim_tblTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._hobilerTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.hobiler.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._hobiler_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Hobiler_tbl.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._hobilerTableAdapter.Update(addedRows));
+                    result = (result + this._hobiler_tblTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._sertifikaTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.sertifika.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._sertifika_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Sertifika_tbl.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._sertifikaTableAdapter.Update(addedRows));
+                    result = (result + this._sertifika_tblTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -4819,43 +4394,43 @@ namespace WebApplication1.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateDeletedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._sertifikaTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.sertifika.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._sertifika_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Sertifika_tbl.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._sertifikaTableAdapter.Update(deletedRows));
+                    result = (result + this._sertifika_tblTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._hobilerTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.hobiler.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._hobiler_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Hobiler_tbl.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._hobilerTableAdapter.Update(deletedRows));
+                    result = (result + this._hobiler_tblTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._egitimTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.egitim.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._egitim_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Egitim_tbl.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._egitimTableAdapter.Update(deletedRows));
+                    result = (result + this._egitim_tblTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._deneyimTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.deneyim.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._deneyim_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Deneyim_tbl.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._deneyimTableAdapter.Update(deletedRows));
+                    result = (result + this._deneyim_tblTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._hakkımdaTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.hakkımda.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._hakkimda_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Hakkimda_tbl.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._hakkımdaTableAdapter.Update(deletedRows));
+                    result = (result + this._hakkimda_tblTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -4898,28 +4473,28 @@ namespace WebApplication1.DataSet1TableAdapters {
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._hakkımdaTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._hakkımdaTableAdapter.Connection) == false))) {
+            if (((this._hakkimda_tblTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._hakkimda_tblTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("TableAdapterManager tarafından yönetilen tüm TableAdapter\'lar aynı bağlantı dizes" +
                         "ini kullanmalıdır.");
             }
-            if (((this._deneyimTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._deneyimTableAdapter.Connection) == false))) {
+            if (((this._deneyim_tblTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._deneyim_tblTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("TableAdapterManager tarafından yönetilen tüm TableAdapter\'lar aynı bağlantı dizes" +
                         "ini kullanmalıdır.");
             }
-            if (((this._egitimTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._egitimTableAdapter.Connection) == false))) {
+            if (((this._egitim_tblTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._egitim_tblTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("TableAdapterManager tarafından yönetilen tüm TableAdapter\'lar aynı bağlantı dizes" +
                         "ini kullanmalıdır.");
             }
-            if (((this._hobilerTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._hobilerTableAdapter.Connection) == false))) {
+            if (((this._hobiler_tblTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._hobiler_tblTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("TableAdapterManager tarafından yönetilen tüm TableAdapter\'lar aynı bağlantı dizes" +
                         "ini kullanmalıdır.");
             }
-            if (((this._sertifikaTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._sertifikaTableAdapter.Connection) == false))) {
+            if (((this._sertifika_tblTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._sertifika_tblTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("TableAdapterManager tarafından yönetilen tüm TableAdapter\'lar aynı bağlantı dizes" +
                         "ini kullanmalıdır.");
             }
@@ -4955,49 +4530,49 @@ namespace WebApplication1.DataSet1TableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._hakkımdaTableAdapter != null)) {
-                    revertConnections.Add(this._hakkımdaTableAdapter, this._hakkımdaTableAdapter.Connection);
-                    this._hakkımdaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._hakkımdaTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._hakkımdaTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._hakkımdaTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._hakkımdaTableAdapter.Adapter);
+                if ((this._hakkimda_tblTableAdapter != null)) {
+                    revertConnections.Add(this._hakkimda_tblTableAdapter, this._hakkimda_tblTableAdapter.Connection);
+                    this._hakkimda_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._hakkimda_tblTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._hakkimda_tblTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._hakkimda_tblTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._hakkimda_tblTableAdapter.Adapter);
                     }
                 }
-                if ((this._deneyimTableAdapter != null)) {
-                    revertConnections.Add(this._deneyimTableAdapter, this._deneyimTableAdapter.Connection);
-                    this._deneyimTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._deneyimTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._deneyimTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._deneyimTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._deneyimTableAdapter.Adapter);
+                if ((this._deneyim_tblTableAdapter != null)) {
+                    revertConnections.Add(this._deneyim_tblTableAdapter, this._deneyim_tblTableAdapter.Connection);
+                    this._deneyim_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._deneyim_tblTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._deneyim_tblTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._deneyim_tblTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._deneyim_tblTableAdapter.Adapter);
                     }
                 }
-                if ((this._egitimTableAdapter != null)) {
-                    revertConnections.Add(this._egitimTableAdapter, this._egitimTableAdapter.Connection);
-                    this._egitimTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._egitimTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._egitimTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._egitimTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._egitimTableAdapter.Adapter);
+                if ((this._egitim_tblTableAdapter != null)) {
+                    revertConnections.Add(this._egitim_tblTableAdapter, this._egitim_tblTableAdapter.Connection);
+                    this._egitim_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._egitim_tblTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._egitim_tblTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._egitim_tblTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._egitim_tblTableAdapter.Adapter);
                     }
                 }
-                if ((this._hobilerTableAdapter != null)) {
-                    revertConnections.Add(this._hobilerTableAdapter, this._hobilerTableAdapter.Connection);
-                    this._hobilerTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._hobilerTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._hobilerTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._hobilerTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._hobilerTableAdapter.Adapter);
+                if ((this._hobiler_tblTableAdapter != null)) {
+                    revertConnections.Add(this._hobiler_tblTableAdapter, this._hobiler_tblTableAdapter.Connection);
+                    this._hobiler_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._hobiler_tblTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._hobiler_tblTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._hobiler_tblTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._hobiler_tblTableAdapter.Adapter);
                     }
                 }
-                if ((this._sertifikaTableAdapter != null)) {
-                    revertConnections.Add(this._sertifikaTableAdapter, this._sertifikaTableAdapter.Connection);
-                    this._sertifikaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._sertifikaTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._sertifikaTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._sertifikaTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._sertifikaTableAdapter.Adapter);
+                if ((this._sertifika_tblTableAdapter != null)) {
+                    revertConnections.Add(this._sertifika_tblTableAdapter, this._sertifika_tblTableAdapter.Connection);
+                    this._sertifika_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._sertifika_tblTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._sertifika_tblTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._sertifika_tblTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._sertifika_tblTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -5058,25 +4633,25 @@ namespace WebApplication1.DataSet1TableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._hakkımdaTableAdapter != null)) {
-                    this._hakkımdaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._hakkımdaTableAdapter]));
-                    this._hakkımdaTableAdapter.Transaction = null;
+                if ((this._hakkimda_tblTableAdapter != null)) {
+                    this._hakkimda_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._hakkimda_tblTableAdapter]));
+                    this._hakkimda_tblTableAdapter.Transaction = null;
                 }
-                if ((this._deneyimTableAdapter != null)) {
-                    this._deneyimTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._deneyimTableAdapter]));
-                    this._deneyimTableAdapter.Transaction = null;
+                if ((this._deneyim_tblTableAdapter != null)) {
+                    this._deneyim_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._deneyim_tblTableAdapter]));
+                    this._deneyim_tblTableAdapter.Transaction = null;
                 }
-                if ((this._egitimTableAdapter != null)) {
-                    this._egitimTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._egitimTableAdapter]));
-                    this._egitimTableAdapter.Transaction = null;
+                if ((this._egitim_tblTableAdapter != null)) {
+                    this._egitim_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._egitim_tblTableAdapter]));
+                    this._egitim_tblTableAdapter.Transaction = null;
                 }
-                if ((this._hobilerTableAdapter != null)) {
-                    this._hobilerTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._hobilerTableAdapter]));
-                    this._hobilerTableAdapter.Transaction = null;
+                if ((this._hobiler_tblTableAdapter != null)) {
+                    this._hobiler_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._hobiler_tblTableAdapter]));
+                    this._hobiler_tblTableAdapter.Transaction = null;
                 }
-                if ((this._sertifikaTableAdapter != null)) {
-                    this._sertifikaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._sertifikaTableAdapter]));
-                    this._sertifikaTableAdapter.Transaction = null;
+                if ((this._sertifika_tblTableAdapter != null)) {
+                    this._sertifika_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._sertifika_tblTableAdapter]));
+                    this._sertifika_tblTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

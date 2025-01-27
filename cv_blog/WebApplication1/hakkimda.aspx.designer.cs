@@ -11,7 +11,7 @@ namespace page
 {
 
 
-    public partial class hakkımda
+    public partial class hakkimda
     {
 
         /// <summary>

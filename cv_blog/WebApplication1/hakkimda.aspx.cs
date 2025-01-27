@@ -1,36 +1,36 @@
 ﻿using System;
-using WebApplication1.DataSet1TableAdapters; 
+using WebApplication1.DataSet1TableAdapters;
 
 namespace page
-{    public partial class hakkımda : System.Web.UI.Page
+{
+    public partial class hakkimda : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Page.IsPostBack==false)
+            if (!Page.IsPostBack)
             {
-                {  hakkımdaTableAdapter dt = new hakkımdaTableAdapter();
-                    var data = dt.hakkimdalistele();
+                Hakkimda_tblTableAdapter dt = new Hakkimda_tblTableAdapter();
+                var data = dt.HakkimdaListele();
 
-                    if (data.Rows.Count > 0)
-                    {
-                        TextBox1.Text = data[0].AD;
-                        TextBox2.Text = data[0].SOYAD;
-                        TextBox3.Text = data[0].ADRES;
-                        TextBox4.Text = data[0].MAIL;
-                        TextBox5.Text = data[0].TELEFON;
-                        TextBox6.Text = data[0].ACIKLAMA;
-                        TextBox7.Text = data[0].fotograf;
-                    }
+                if (data.Rows.Count > 0)
+                {
+                    TextBox1.Text = data[0].AD;
+                    TextBox2.Text = data[0].SOYAD;
+                    TextBox3.Text = data[0].ADRES;
+                    TextBox4.Text = data[0].MAIL;
+                    TextBox5.Text = data[0].TELEFON;
+                    TextBox6.Text = data[0].ACIKLAMA;
+                    TextBox7.Text = data[0].fotograf;
                 }
             }
         }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             try
             {
-                hakkımdaTableAdapter dt = new hakkımdaTableAdapter();
-
-                dt.hakkimda_guncelle(
+                Hakkimda_tblTableAdapter dt = new Hakkimda_tblTableAdapter();
+                dt.Hakkimda_güncelle(
                     TextBox1.Text,
                     TextBox2.Text,
                     TextBox3.Text,
@@ -47,6 +47,5 @@ namespace page
                 Label1.Text = "Hata oluştu: " + ex.Message;
             }
         }
-
     }
 }
